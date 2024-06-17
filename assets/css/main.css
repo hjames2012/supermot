@@ -8,6 +8,7 @@ body {
     padding: 0;
   }
   .searchInput {
+    background:transparent;
     padding: 10px;
     box-sizing: border-box;
     margin-bottom: 20px;
@@ -18,46 +19,50 @@ body {
     margin: 20px auto;
     /* Center horizontally */
     border-radius: 10px;
-    border: none;
+    border: solid 2px #333;
     user-select: none;
     outline: none;
-    font-family: 'Quicksand', sans-serif;
+    font-family: 'Plus Jakarta Sans', sans-serif;
   }
   
+
+  a.link:hover {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    background-color: transparent;
+    transform: scale(1.1);
+    color: var(--txtcolor);
+    padding: 1px 1px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 12px;
+    border: solid 1px #fff;
+    margin: 10px;
+  }
+  .box img {
+    border-radius: 13px;
+    width:200px;
+  }
+
   .button {
+    font-family: 'Plus Jakarta Sans', sans-serif;
     background-color: transparent;
     border: none;
     color: white;
     padding: 1px 1px;
     text-align: center;
     text-decoration: none;
-    display: inline-block;
     font-size: 16px;
-    margin: 2px 2px;
     cursor: pointer;
     border-radius: 12px;
     transition: background-color 0.3s,
-      color 0.2s, transform .4s;
-
-  }
-  img {
-    border-radius: 13px;
-  }
-
-  a.link:hover {
-    background-color: transparent;
-    transform: scale(1.1);
-    color: white;
-    border: none;
-    padding: 1px 1px;
-    text-align: center;
-    text-decoration: none;
+      color 0.2s, transform .4s, box-shadow 1s;
+    margin: 10px;
     display: inline-block;
-    font-size: 16px;
-    margin: 2px 2px;
-    cursor: pointer;
-    border-radius: 12px;
   }
+
   .navbar {
     display: flex;
     justify-content: space-between;

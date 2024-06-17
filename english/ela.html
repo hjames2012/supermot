@@ -10,7 +10,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" href="/lexiapower.png" />
     <link rel="shortcut icon" href="/lexiapower.png" />
-  <link rel="stylesheet" type="text/css" href="/assets/css/style.css" />
+  <link rel="stylesheet" type="text/css" href="/assets/css/main.css" />
   <link rel="manifest" href="/manifest.json"/>
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <script src="https://kit.fontawesome.com/a70619ef6c.js" crossorigin="anonymous"></script>
@@ -43,7 +43,7 @@
           body {
             background-color: #222;
             color: #fff;
-            font-family: 'Poppins', sans-serif;
+            font-family: 'Plus Jakarta Sans', sans-serif;
             margin: 0;
             padding: 0;
             overflow: hidden;
@@ -182,6 +182,28 @@
               transform: translate(-50%, -50%) rotate(360deg);
             }
           }
+
+          .menu-area {
+      background-color:transparent;
+      height:330px;
+      transition:1s;
+    }
+
+.menu-area:hover {
+  transform:translateY(-20.5rem);
+}
+
+    .menu {
+      transition:1s;
+      border-radius: 20px;
+      background: #262626;
+      height: 60px;
+      position:absolute;
+      text-align: center;
+      justify-content: center;
+      width:100%;
+      top:100%;
+    }
         </style>
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-TQ8CVXYBF9"></script>
@@ -210,10 +232,12 @@
             <br>
           </div>
           <br>
-            <div style="float: center; border-radius: 20px; background: #262626; height: 60px; bottom: -4%; top: 1rem; text-align: center;justify-content: center;">
+          <div class="menu-area">
+            <div class="menu">
             <a style="color: white; background: transparent; text-decoration: none; font-size: 30px;  margin: 0px 10px;" href="/english/"><i class="fa-solid fa-angle-left"></i> Back</a>
               <button onclick="reload()" style="background: transparent; width: 50px; right: 0;   margin: 0px 10px;" class="reload"><i class="fa-solid fa-rotate-right"></i></button>
             <button onclick="toggleFullscreen()" style="background: transparent; width: 50px; right: 0;  margin: 0px 10px;" class="fullscreen"><i class="fa-solid fa-expand"></i></button>
+            </div>
             </div>
           </div>
         </div>

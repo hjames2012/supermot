@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -9,16 +8,16 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" href="/lexiapower.png" />
-    <link rel="shortcut icon" href="/lexiapower.png" />
-  <link rel="stylesheet" type="text/css" href="/assets/css/style.css" />
-  <link rel="manifest" href="/manifest.json"/>
+  <link rel="shortcut icon" href="/lexiapower.png" />
+  <link rel="stylesheet" type="text/css" href="/assets/css/main.css" />
+  <link rel="manifest" href="/manifest.json" />
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <script src="https://kit.fontawesome.com/a70619ef6c.js" crossorigin="anonymous"></script>
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-TQ8CVXYBF9"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
+    function gtag() { dataLayer.push(arguments); }
     gtag('js', new Date());
 
     gtag('config', 'G-TQ8CVXYBF9');
@@ -26,10 +25,11 @@
   <style>
     .iframe {
       float: center;
-        width: 100%; 
+      width: 100%;
       height: 100%;
       text-align: center;
     }
+
     .fullscreen {
       font-size: 20;
       border-radius: 8px;
@@ -38,6 +38,7 @@
       font-size: 30px;
       justify-content: space-between;
     }
+
     .reload {
       font-size: 20;
       border-radius: 8px;
@@ -46,13 +47,15 @@
       font-size: 30px;
       justify-content: space-between;
     }
+
     .reload:hover {
       transform: rotate(-360deg);
     }
+
     body {
       background-color: #222;
       color: #fff;
-      font-family: 'Poppins', sans-serif;
+      font-family: 'Plus Jakarta Sans', sans-serif;
       margin: 0;
       padding: 0;
       overflow: hidden;
@@ -73,8 +76,8 @@
 
     .back-button:hover {
       background-color: gray;
-        left: 1rem;
-      }
+      left: 1rem;
+    }
 
 
     #game-container {
@@ -87,7 +90,7 @@
     #game-container iframe {
       border: none;
       float: center;
-        width: 1300px; 
+      width: 1300px;
       height: 475px;
       text-align: center;
       border-radius: 5px;
@@ -112,6 +115,7 @@
       background-color: #DD4A68;
       transition: background-color 0.3s ease;
     }
+
 
     #server-buttons a:hover {
       background-color: #FF6B88;
@@ -182,14 +186,26 @@
       animation: loader 1s linear infinite;
     }
 
-    @keyframes loader {
-      0% {
-        transform: translate(-50%, -50%) rotate(0deg);
-      }
+    .menu-area {
+      background-color:transparent;
+      height:330px;
+      transition:1s;
+    }
 
-      100% {
-        transform: translate(-50%, -50%) rotate(360deg);
-      }
+.menu-area:hover {
+  transform:translateY(-20.5rem);
+}
+
+    .menu {
+      transition:1s;
+      border-radius: 20px;
+      background: #262626;
+      height: 60px;
+      position:absolute;
+      text-align: center;
+      justify-content: center;
+      width:100%;
+      top:100%;
     }
   </style>
 </head>
@@ -201,26 +217,31 @@
     }
   </script>
 
-  <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+  <script type="text/javascript"
+    src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
   <br>
-  <div id="game-container" style="border-radius: 20px; background: #262626; height: 500px;">
+  <div id="game-container" style="border-radius: 20px; background: #262626; height: 500px; margin-bottom:50px;">
     <div class="iframe">
-      <iframe
-        class="abc" id="gameFramey"></iframe>
+      <iframe class="abc" id="gameFramey"></iframe>
       <br>
     </div>
     <br>
-      <div style="float: center; border-radius: 20px; background: #262626; height: 60px; bottom: -4%; top: 1rem;text-align: center;justify-content: center;">
-      <a style="color: white; background: transparent; text-decoration: none; font-size: 30px;  margin: 0px 10px;" href="/english/"><i class="fa-solid fa-angle-left"></i> Back</a>
-        <button onclick="reload()" style="background: transparent; width: 50px; right: 0;  margin: 0px 10px;" class="reload"><i class="fa-solid fa-rotate-right"></i></button>
-      <button onclick="toggleFullscreen()" style="background: transparent; width: 50px; right: 0; margin: 0px 10px;" class="fullscreen"><i class="fa-solid fa-expand"></i></button>
-      </div>
+    <div class="menu-area">
+    <div class="menu">
+      <a style="color: white; background: transparent; text-decoration: none; font-size: 30px;  margin: 0px 10px;"
+        href="/english/"><i class="fa-solid fa-angle-left"></i> Back</a>
+      <button onclick="reload()" style="background: transparent; width: 50px; right: 0;  margin: 0px 10px;"
+        class="reload"><i class="fa-solid fa-rotate-right"></i></button>
+      <button onclick="toggleFullscreen()" style="background: transparent; width: 50px; right: 0; margin: 0px 10px;"
+        class="fullscreen"><i class="fa-solid fa-expand"></i></button>
     </div>
+  </div>
+  </div>
   </div>
   <script>
     var iframe = document.getElementById("gameFramey");
 
-   backButton.addEventListener('click', () => {
+    backButton.addEventListener('click', () => {
       window.history.back();
     });
   </script>
@@ -228,15 +249,12 @@
     const urlParams = new URLSearchParams(window.location.search);
     const file = urlParams.get('book');
     const type = urlParams.get('type')
-      if (type == "swf") {
-        document.getElementById('gameFramey').src = 'https://rawgitt.glitch.me/galacticnetwork/gfiles/master/gfiles/flash/index.html?swf=' + file
-      }
-  else {
+    if (type == "swf") {
+      document.getElementById('gameFramey').src = 'https://rawgitt.glitch.me/galacticnetwork/gfiles/master/gfiles/flash/index.html?swf=' + file
+    }
+    else {
       document.getElementById('gameFramey').src = "https://rawgitt.glitch.me/galacticnetwork/gfiles/master/gfiles/html5/" + file + '/index.html'
     }
-  </script>
-  <script>
-    alert('I updated the CDN at March 6th 7:25 PM PST, It will be slow but is more likely to be unblocked.')
   </script>
   <script>
     function toggleFullscreen() {
@@ -270,10 +288,11 @@
     }
   </script>
 </body>
-  <script src="/assets/scripts/s1.js"></script>
-  <script src="/assets/scripts/s2.js"></script>
-  <script src="/assets/scripts/index.js"></script>
-  <script src="/assets/scripts/themes.js"></script>
-  <script src="/assets/scripts/panic.js"></script>
-  <script src="/assets/scripts/rc.js"></script>
+<script src="/assets/scripts/s1.js"></script>
+<script src="/assets/scripts/s2.js"></script>
+<script src="/assets/scripts/index.js"></script>
+<script src="/assets/scripts/themes.js"></script>
+<script src="/assets/scripts/panic.js"></script>
+<script src="/assets/scripts/rc.js"></script>
+
 </html>
