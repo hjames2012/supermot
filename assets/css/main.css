@@ -1,0 +1,97 @@
+@import url('/assets/css/themes.css');
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@500&family=Plus+Jakarta+Sans:ital,wght@0,600;1,600&family=Quicksand:wght@300..700&display=swap');
+body {
+    background-color: #222;
+    color: white;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  .searchInput {
+    padding: 10px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    width: 100%;
+    /* Occupy full width */
+    max-width: 400px;
+    /* Limit maximum width */
+    margin: 20px auto;
+    /* Center horizontally */
+    border-radius: 10px;
+    border: none;
+    user-select: none;
+    outline: none;
+    font-family: 'Quicksand', sans-serif;
+  }
+  
+  .button {
+    background-color: transparent;
+    border: none;
+    color: white;
+    padding: 1px 1px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 2px 2px;
+    cursor: pointer;
+    border-radius: 12px;
+    transition: background-color 0.3s,
+      color 0.2s, transform .4s;
+
+  }
+  img {
+    border-radius: 13px;
+  }
+
+  a.link:hover {
+    background-color: transparent;
+    transform: scale(1.1);
+    color: white;
+    border: none;
+    padding: 1px 1px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 2px 2px;
+    cursor: pointer;
+    border-radius: 12px;
+  }
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #333;
+    color: #fff;
+    border-radius: 7px;
+}
+
+.navbar-brand .brand-logo {
+    width:50px;
+    margin:0;
+}
+
+.navbar-nav {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+.nav-item .nav-link {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+.nav-item .nav-link:hover {
+    color: #ddd;
+}
+
+@media (max-width: 768px) {
+    .navbar-nav {
+        display: none;
+    }
+}
