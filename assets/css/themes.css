@@ -1,106 +1,106 @@
 body[theme="classic"] {
   --bgcolor: #222;
-  --navbar: #303030;
-  --txtcolor: white;
+  --navbar: #30303062;
+  --txtcolor: #adad43;
 }
 
 body[theme="light"] {
   --bgcolor: gray;
-  --navbar: #a1a1a1;
+  --navbar: #a1a1a162;
   --txtcolor: black;
 }
 body[theme="cornhub"] {
   --bgcolor: black;
-  --navbar: #6e2d11;
+  --navbar: #6e2d1162;
   --txtcolor: orange;
 }
 body[theme="midnight"] {
   --bgcolor: rgb(4, 24, 56);
-  --navbar: #000042;
+  --navbar: #00004262;
   --txtcolor: black;
 }
-body[theme="legacyv3"] {
-  --bgcolor: #212121;
-  --navbar: #706529;
-  --txtcolor: #adad43;
+body[theme="legacyv5"] {
+  --bgcolor: #333;
+  --navbar: rgba(0, 0, 0, 0.473);
+  --txtcolor: white;
 }
 body[theme="legacyv4"] {
   --bgcolor: #1a1a1a;
-  --navbar: #262626;
+  --navbar: #26262662;
   --txtcolor: yellow;
 }
 body[theme="discord"] {
   --bgcolor: #36393F;
-  --navbar: #8992fb;
+  --navbar: #8992fb62;
   --txtcolor: #5865F2;
 }
 body[theme="incognito"] {
   --bgcolor: #161923;
-  --navbar: #044321;
+  --navbar: #04432162;
   --txtcolor: #3cb371;
 }
 body[theme="cosmic"] {
   --bgcolor: #282834;
-  --navbar: #0e01c6;
+  --navbar: #0e01c662;
   --txtcolor: #082f59;
 }
 body[theme="cherry"] {
   --bgcolor: #d37979;
-  --navbar: #df62be;
+  --navbar: #df62be62;
   --txtcolor: #240017;
 }
 body[theme="ocean"] {
   --bgcolor: #7fcdff;
-  --navbar: #064273;
+  --navbar: #06427362;
   --txtcolor: gray;
 }
 body[theme="3kh0"] {
   --bgcolor: #1c1c1c;
-  --navbar: #9fd39c;
+  --navbar: #9fd39c62;
   --txtcolor: #4caf50;
 }
 body[theme="rogue"] {
   --bgcolor: #D04343;
-  --navbar: #D04343;
+  --navbar: #D0434362;
   --txtcolor: #310707;
 }
 body[theme="blooket"] {
   --bgcolor: #0dc2cf;
-  --navbar: #ce0db4;
+  --navbar: #ce0db462;
   --txtcolor: #9a49aa;
 }
 body[theme="kahoot"] {
   --bgcolor: #46178f;
-  --navbar: #292037;
+  --navbar: #29203762;
   --txtcolor: #786d88;
 }
 body[theme="versatile"] {
   --bgcolor: black;
-  --navbar: #262626;
+  --navbar: #26262662;
   --txtcolor: #d7cccc;
 }
 body[theme="plexile"] {
   background: url(https://cdn.glitch.global/8ccf4cfa-741f-4630-8f29-733b36d972e6/f97cae64-03b4-4b89-94ec-0dacf077ea89.image.png?v=1705798388344);
-  --navbar: #16181c;
+  --navbar: #16181c62;
   --txtcolor: #b03232;
 }
 body[theme="blueblack"] {
   background: url(https://cdn.glitch.global/32522aaa-b118-401b-8f22-be0a0b08fdaa/gradient.png?v=1710524670795);
-  --navbar: black;
+  --navbar: rgba(0, 0, 0, 0.305);
   --txtcolor: #d7cccc;
 }
 body[theme="redblack"] {
   background: url(https://iili.io/JWt6ZTx.png);
-  --navbar: #570000;
+  --navbar: #57000062;
   --txtcolor: #8f8f8f;
 }
 body[theme="greenpink"] {
   background: url(https://iili.io/JWtPIvs.png);
-  --navbar: #78075a;
+  --navbar: #78075a62;
   --txtcolor: pink;
 }
 body[theme="blackteal"] {
   background: url(https://iili.io/JWtPgwv.png);
-  --navbar: #0076a8;
+  --navbar: #0076a862;
   --txtcolor: #00ffcc;
 }
