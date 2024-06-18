@@ -8,14 +8,16 @@
 
   "display": "standalone", 
 
-  "icons": [{ 
+  "icons": [
+    { 
 
-    "src": "assets/images/jmw.png", 
+    "src": "/assets/images/jmw.png", 
 
     "sizes": "512x512", 
 
     "type": "image/png" 
 
-  }] 
+  }
+] 
 
 }
