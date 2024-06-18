@@ -9,7 +9,7 @@
   <meta content="Jordansmathwork" property="og:title">
 
   <meta content="Jordan's math work is a comprehensive educational platform designed to help students master various mathematical concepts. With a user-friendly interface, it offers a wide range of resources, including video tutorials, interactive practice problems, and detailed explanations. Jordan, an experienced math tutor and educator, provides clear and concise lessons that break down complex concepts into manageable steps. The platform also offers personalized learning tools, allowing students to track their progress and identify areas for improvement. Overall, Jordansmathwork offers a dynamic and engaging learning experience for students of all levels." property="og:description">
-  <title>Jordan's Math Work | Settings</title>
+  <title>Jordan's Math Work - Puzzles</title>
   <link rel="icon" href="/assets/images/jmw.png" />
   <link rel="shortcut icon" href="/assets/images/jmw.png" />
   <link rel="manifest" href="/manifest.json"/>
@@ -56,19 +56,39 @@
       <div class="section">
 
         <div class="history-hiding">
-          <center><h4>History Hiding</h4></center>
+          <center><h2>History Hiding</h2></center>
           <center><button class="btn" onclick="ab()">ㅤㅤHistory Hiderㅤㅤ</button></center>
           <br>
           <center><button class="btn" onclick="buffedAB()">Advanced history hider</button></center>
         </div>
       </div>
       <div class="section">
-        <center><h4>Tab Cloaking</h4></center>
-        <center><input class="input2" id="title" placeholder="Title" onkeyup="setTitle(this.value)"></center>
-        <center><input class="input2" id="icon" placeholder="Favicon" onkeyup="setFavicon(this.value.trim())"></center>
+        <div align="center">
+          <h2>Tab Cloaking</h2>
+          <input class="setinput" id="title" placeholder="Title" />
+          <br>
+          <br>
+          <input class="setinput" id="favicon" placeholder="Favicon" />
+      <br>
+      <br>
+      
+          <div class="select-box">
+            <div class="selected-option" id="presets">Presets</div>
+            <ul class="options" id="presetOptions">
+              <li id="google">Google</li>
+              <li id="googleClassroom">Google Classroom</li>
+              <li id="bing">Bing</li>
+              <li id="nearpod">Nearpod</li>
+              <li id="powerschool">Powerschool sign in</li>
+            </ul>
+          </div>
+          <br>
+          <button id="customApply">Apply</button>
+          <button id="reset">Reset Cloak</button>
+      </div>
         </div>
       <div class="section">
-        <center><h4>Themes (go to another page after you selected)</h4></center>
+        <center><h2>Themes</h2></center>
         <center><select id="themepicker"></center>
           <center><option value="select">Select Theme</option></center>
           <option onclick="location.reload()" value="classic">Classic</option>
@@ -97,6 +117,7 @@
       </div>
     </div>
 </body>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="/assets/scripts/index.js"></script>
   <script src="/assets/scripts/themes.js"></script>
   <script src="/assets/scripts/panic.js"></script>
