@@ -35,7 +35,7 @@
       font-size: 20;
       border-radius: 8px;
       border: none;
-      color: white;
+      color: var(--txtcolor);
       font-size: 30px;
       justify-content: space-between;
     }
@@ -43,7 +43,7 @@
       font-size: 20;
       border-radius: 8px;
       border: none;
-      color: white;
+      color: var(--txtcolor);
       font-size: 30px;
       justify-content: space-between;
     }
@@ -54,7 +54,7 @@
       font-size: 20;
       border-radius: 8px;
       border: none;
-      color: white;
+      color: var(--txtcolor);
       font-size: 30px;
       justify-content: space-between;
     }
@@ -62,36 +62,19 @@
       font-size: 20;
       border-radius: 8px;
       border: none;
-      color: white;
+      color: var(--txtcolor);
       font-size: 30px;
       justify-content: space-between;
     }
     body {
-      background-color: #222;
-      color: #fff;
+      background-color: var(--bgcolor);
+      color: var(--txtcolor);
       font-family: 'Plus Jakarta Sans', sans-serif;
       margin: 0;
       padding: 0;
       overflow: hidden;
     }
 
-    .back-button {
-      position: fixed;
-      top: 1rem;
-      left: -4%;
-      background-color: yellow;
-      color: black;
-      padding: 0.5rem 1rem;
-      border-radius: 0.5rem;
-      font-size: 1.2rem;
-      text-decoration: none;
-      transition: 0.7s ease;
-    }
-
-    .back-button:hover {
-      background-color: gray;
-        left: 1rem;
-      }
 
 
     #game-container {
@@ -222,7 +205,7 @@
     .menu {
       transition:1s;
       border-radius: 20px;
-      background: #262626;
+      background: var(--navbar);
       height: 60px;
       position:absolute;
       text-align: center;
@@ -256,7 +239,7 @@
     <br>
     <div class="menu-area">
       <div class="menu">
-      <a style="color: white; background: transparent; text-decoration: none; font-size: 30px;  margin: 0px 10px;" href="/history/"><i class="fa-solid fa-angle-left"></i> Back</a>
+      <a style="color: var(--txtcolor); background: transparent; text-decoration: none; font-size: 30px;  margin: 0px 10px;" href="/history/"><i class="fa-solid fa-angle-left"></i> Back</a>
         <button onclick="reload()" style="background: transparent; width: 50px; right: 0;   margin: 0px 10px;" class="reload"><i class="fa-solid fa-rotate-right"></i></button>
         <button onclick="goBack()" style="background: transparent; width: 50px; right: 0;   margin: 0px 10px;" class="back"><i class="fa-solid fa-chevron-left"></i></i></button>
         <button onclick="goForward()" style="background: transparent; width: 50px; right: 0;   margin: 0px 10px;" class="forward"><i class="fa-solid fa-chevron-right"></i></button>

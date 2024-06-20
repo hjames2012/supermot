@@ -48,7 +48,7 @@ body {
     font-size: 16px;
     cursor: pointer;
     border-radius: 13px;
-    border: solid 3px rgb(216, 216, 0);
+    border: solid 3px var(--navbar);
     margin: 10px;
     text-wrap: wrap;
   }
@@ -179,9 +179,9 @@ input::placeholder {
 }
 
 #customContextMenu {
-  border: 1px solid black;
+  border: 1px solid var(--txtcolor);
   background-color: var(--navbar);
-  color: var(--txtcolor)e;
+  color: var(--txtcolor);
   border-radius: 10px;
 }
 

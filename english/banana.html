@@ -34,7 +34,7 @@
       font-size: 20;
       border-radius: 8px;
       border: none;
-      color: white;
+      color: var(--txtcolor);
       font-size: 30px;
       justify-content: space-between;
     }
@@ -43,7 +43,7 @@
       font-size: 20;
       border-radius: 8px;
       border: none;
-      color: white;
+      color: var(--txtcolor);
       font-size: 30px;
       justify-content: space-between;
     }
@@ -53,7 +53,7 @@
     }
 
     body {
-      background-color: #222;
+      background-color: var(--bgcolor);
       color: #fff;
       font-family: 'Plus Jakarta Sans', sans-serif;
       margin: 0;
@@ -200,7 +200,7 @@
     .menu {
       transition:1s;
       border-radius: 20px;
-      background: #262626;
+      background: var(--navbar);
       height: 60px;
       position:absolute;
       text-align: center;
@@ -231,7 +231,7 @@
     <br>
     <div class="menu-area">
     <div class="menu">
-      <a style="color: white; background: transparent; text-decoration: none; font-size: 30px;  margin: 0px 10px;"
+      <a style="color: var(--txtcolor); background: transparent; text-decoration: none; font-size: 30px;  margin: 0px 10px;"
         href="/english/"><i class="fa-solid fa-angle-left"></i> Back</a>
       <button onclick="reload()" style="background: transparent; width: 50px; right: 0;  margin: 0px 10px;"
         class="reload"><i class="fa-solid fa-rotate-right"></i></button>
