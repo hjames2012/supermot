@@ -85,13 +85,14 @@
       justify-content: center;
       align-items: center;
       height: 780px;
+      background:transparent;
     }
 
     #game-container iframe {
       border: none;
       float: center;
-      width: 1300px;
-      height: 475px;
+      width: 1400px;
+      height: 500px;
       text-align: center;
       border-radius: 5px;
     }
@@ -211,6 +212,8 @@
 </head>
 
 <body theme="classic">
+  <div id="page-container">
+    <div class="content">
   <script type="text/javascript">
     function googleTranslateElementInit() {
       new google.translate.TranslateElement({ pageLanguage: "en", layout: google.translate.TranslateElement.InlineLayout.HORIZONTAL }, "google_translate_element");
@@ -220,7 +223,7 @@
   <script type="text/javascript"
     src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
   <br>
-  <div id="game-container" style="border-radius: 20px; background: #262626; height: 500px; margin-bottom:50px;">
+  <div id="game-container" style="border-radius: 20px; background: transparent; height: 500px; margin-bottom:50px;">
     <div class="iframe">
       <iframe class="abc" id="gameFramey"></iframe>
       <br>
@@ -238,6 +241,8 @@
   </div>
   </div>
   </div>
+  </div>
+<script src="/assets/scripts/fade.js"></script>
   <script>
     var iframe = document.getElementById("gameFramey");
 
@@ -250,10 +255,10 @@
     const file = urlParams.get('book');
     const type = urlParams.get('type')
     if (type == "swf") {
-      document.getElementById('gameFramey').src = 'https://rawgitt.glitch.me/galacticnetwork/gfiles/master/gfiles/flash/index.html?swf=' + file
+      document.getElementById('gameFramey').src = 'https://cdn.uclaregister.college/galacticnetwork/gfiles/master/gfiles/flash/index.html?swf=' + file
     }
     else {
-      document.getElementById('gameFramey').src = "https://rawgitt.glitch.me/galacticnetwork/gfiles/master/gfiles/html5/" + file + '/index.html'
+      document.getElementById('gameFramey').src = "https://learn.mytrapphone.xyz/galacticnetwork/gfiles/master/gfiles/html5/" + file + '/index.html'
     }
   </script>
   <script>

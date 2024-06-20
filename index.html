@@ -15,6 +15,8 @@
     <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.4.2/css/all.css">
 </head>
 <body theme="classic">
+<div id="page-container">
+    <div class="content">
         <nav class="navbar">
             <div class="navbar-brand">
                 <a href="/"><img class="brand-logo" src="/assets/images/jmw.png"></a>
@@ -26,13 +28,109 @@
                 <li class="nav-item"><a href="/geography" class="nav-link"><i class="fa-regular fa-gear-complex"></i> Settings</a></li>
             </ul>
         </nav>
+        <div class="reasons">
+        <h1 style="font-size:2rem;font-weight: bold;font-family: 'Be Vietnam Pro', sans-serif;margin-top:100px;">The easiest way to <div class="typewriter-container">
+            <span class="typewriter-text" id="typewriter-text"></span>
+        </div></h1>
+        <video id="theVideo" nocontrols autoplay muted>
+            <source src="/assets/games.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
         <div align="center">
-            <h1 style="margin:100px;">JMW</h1>
+            <h6>Join thousands of people worldwide playing on one of the best sites made!</h6>
+<button onclick="window.location.href='english'" style="width:200px;height:50px;">Play Now!</button>
+<hr>
+<h2>Featured:</h2>
+<div class="carousel-container">
+    <div class="featured">
+        <a href="/english/ela.html?book=1v1-lol&type=local"><img src="/assets/images/featured/1v1-lol.jpg"></a>
+        <a href="/english/ela.html?book=tunnel-rush&type=local"><img src="/assets/images/featured/tunnelrush.jpg"></a>
+        <a href="/english/ela.html?book=ro-blox&type=local"><img src="/assets/images/featured/roblox.jpeg"></a>
+        <a href="/english/ela.html?book=basketball-stars&type=local"><img src="/assets/images/featured/basketballstars.avif"></a>
+        <a href="/english/ela.html?book=slope&type=3kh0"><img src="/assets/images/featured/slope.jpg"></a>
+        <a href="/english/ela.html?book=house-of-hazards&type=local"><img src="/assets/images/featured/hoh.avif"></a>
+        <a href="/english/ela.html?book=tabs&type=local"><img src="/assets/images/featured/tabs.jpg"></a>
+        <a href="/english/ela.html?book=bad-piggies&type=local"><img src="/assets/images/featured/bad-piggies.jpg"></a>
+        <a href="/english/ela.html?book=blade-ball&type=local"><img src="/assets/images/featured/blade-ball.webp"></a>
+        <a href="/english/ela.html?book=sm64&type=local"><img src="/assets/images/featured/sm64.jpg"></a>
+    </div>
+</div>
+<hr>
+<h1>What is JMW?</h1>
+<h4>JMW (jordan's math work) is a site for unblocking and gaming, founded in august 2021, JMW is a site owned by galactic network. It has 300+ games and 20+ apps (including a proxy). With 400k trusted users, JMW is a useful site for school hours.</h4>
+<div class="icons">
+<a style="  color: var(--txtcolor);
+  font-size:40px;" href="https://dsc.gg/gnetwork" target="_blank"><i class="fab fa-discord"></i></a>
+<a style="  color: var(--txtcolor);
+  font-size:40px;" href="https://www.youtube.com/@galacticnetwork-dev" target="_blank"><i class="fab fa-youtube"></i></a>
+<a style="  color: var(--txtcolor);
+  font-size:40px;" href="https://github.com/GalacticNetwork/jordansmathwork-v6" target="_blank"><i class="fab fa-github"></i></a>   
+</div>
+        </div>
+    </div>
         </div>
 </body>
+<script>
+    const texts = [
+    "have nostalgia.",
+    "play games.",
+    "have fun.",
+    "be entertained.",
+    "search anything."
+];
+
+let currentTextIndex = 0;
+let currentCharIndex = 0;
+let isDeleting = false;
+const typewriterText = document.getElementById('typewriter-text');
+const typingSpeed = 150;
+const deletingSpeed = 100;
+const delayBetweenTexts = 2000;
+
+function type() {
+    const currentText = texts[currentTextIndex];
+
+    if (isDeleting) {
+        typewriterText.textContent = currentText.substring(0, currentCharIndex - 1);
+        currentCharIndex--;
+    } else {
+        typewriterText.textContent = currentText.substring(0, currentCharIndex + 1);
+        currentCharIndex++;
+    }
+
+    if (!isDeleting && currentCharIndex === currentText.length) {
+        setTimeout(() => isDeleting = true, delayBetweenTexts);
+    } else if (isDeleting && currentCharIndex === 0) {
+        isDeleting = false;
+        currentTextIndex = (currentTextIndex + 1) % texts.length;
+    }
+
+    const speed = isDeleting ? deletingSpeed : typingSpeed;
+    setTimeout(type, speed);
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+    setTimeout(type, 500);
+});
+
+document.addEventListener('DOMContentLoaded', () => {
+    const featured = document.querySelector('.featured');
+    const images = Array.from(featured.children);
+    
+    // Duplicate images to make the scroll infinite
+    images.forEach(image => {
+        const clone = image.cloneNode(true);
+        featured.appendChild(clone);
+    });
+});
+
+</script>
 <script src="/assets/scripts/s1.js"></script>
 <script src="/assets/scripts/s2.js"></script>
 <script src="/assets/scripts/index.js"></script>
 <script src="/assets/scripts/themes.js"></script>
 <script src="/assets/scripts/panic.js"></script>
+<script src="/assets/scripts/fade.js"></script>
+<script src="/assets/scripts/autoplay.js"></script>
 </html>
