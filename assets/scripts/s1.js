@@ -1,11 +1,9 @@
 $(document).ready(function() {
-  // Toggle options when select-box is clicked
   $('.select-box').on('click', function(event) {
       event.stopPropagation();
       $(this).find('.options').toggle();
   });
 
-  // Set selected option text and hide options
   $('#presetOptions').on('click', 'li', function(event) {
       event.stopPropagation();
       var selectedOption = $(this).text();
@@ -13,14 +11,12 @@ $(document).ready(function() {
       $('.options').hide();
   });
 
-  // Hide options if clicked outside
   $(document).on('click', function(event) {
       if (!$(event.target).closest('.select-box').length) {
           $('.options').hide();
       }
   });
 
-  // Custom and preset button event handlers
   const customApply = document.getElementById("customApply");
   const reset = document.getElementById("reset");
   const titleInput = document.getElementById("title");
@@ -32,10 +28,8 @@ $(document).ready(function() {
       location.reload();
   }
 
-  // Check if customApply and reset buttons exist
   if (customApply) {
       customApply.addEventListener("click", () => {
-          // Ensure titleInput and faviconInput exist
           if (titleInput && faviconInput) {
               const title = titleInput.value ? titleInput.value.trim() : "";
               const favicon = faviconInput.value ? faviconInput.value.trim() : "";
@@ -60,7 +54,6 @@ $(document).ready(function() {
       "powerschool": { title: "PowerSchool Sign In", favicon: "https://powerschool.com/favicon.ico" }
   };
 
-  // Add event listeners for preset buttons
   for (const buttonId in presetButtons) {
       if (presetButtons.hasOwnProperty(buttonId)) {
           const button = document.getElementById(buttonId);

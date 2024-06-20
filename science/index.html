@@ -14,7 +14,6 @@
   <link rel="manifest" href="/manifest.json"/>
   <link href="/assets/css/main.css" rel="stylesheet" type="text/css" />
   <link rel="preconnect" href="https://fonts.gstatic.com">
-  <script src="https://kit.fontawesome.com/a70619ef6c.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.4.2/css/all.css">
   <style>
@@ -229,13 +228,6 @@
     </div>
      </div>
   <script>
-    var iframe = document.getElementById("gameFramey");
-
-   backButton.addEventListener('click', () => {
-      window.history.back();
-    });
-  </script>
-  <script>
     const urlParams = new URLSearchParams(window.location.search);
     const file = urlParams.get('book');
     const type = urlParams.get('type')
@@ -278,6 +270,7 @@
     }
   </script>
 </body>
+<script src="/assets/scripts/fade.js"></script>
   <script src="/assets/scripts/s1.js"></script>
   <script src="/assets/scripts/s2.js"></script>
   <script src="/assets/scripts/index.js"></script>
