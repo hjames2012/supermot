@@ -150,9 +150,20 @@ a{
 #uv-register-sw.show {
   display: block;
 }
+
+.img {
+  width:50px;
+  height:50px;
+  border-radius:10px;
+}
+
+a {
+background:var(--txtcolor);
+text-decoration: none;
+}
      </style>
    </head>
-   <body>
+   <body >
     <div id="page-container">
       <div class="content">
       <div id="header">
@@ -161,13 +172,20 @@ a{
       <div id="content">
          <h2>Search on JMW!</h2>
 
-         <form id="uv-form"">
+         <form id="uv-form">
             <input id="uv-search-engine" value="https://www.google.com/search?q=%s" type="hidden"/> 
             <input id="uv-address" type="text" placeholder="Search Google or type an URL" class="form__input"/>
           </form>
           <div class="desc left-margin">
             <p id="uv-error"></p>
             <pre id="uv-error-code"></pre>
+          </div>
+          <div class="quicksearch">
+            <a class="img" href="/static/embed.html#https://google.com"><img class="img" src="/assets/images/app/google.png"/></a>
+            <a class="img" href="/static/embed.html#https://music.youtube.com"><img class="img" src="/assets/images/app/ytm.avif"/></a>
+            <a class="img" href="/static/embed.html#https://hianime.to"><img class="img" src="/assets/images/app/hianime.png"/></a>
+            <a class="img" href="/static/embed.html#https://c.ai"><img class="img" src="/assets/images/app/characterai.webp"/></a>
+            <a class="img" href="/static/embed.html#https://nunflix.com"><img class="img" src="/assets/images/app/nun-flix.png"/></a>
           </div>
       </div>
     </div>
