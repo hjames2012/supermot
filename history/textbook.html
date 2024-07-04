@@ -75,8 +75,6 @@
       overflow: hidden;
     }
 
-
-
     #game-container {
       flex-direction: column;
       justify-content: center;
@@ -214,9 +212,6 @@
       top:100%;
     }
 
-    .iframe {
-
-    }
   </style>
 </head>
 
@@ -298,8 +293,20 @@
     function reload() {
       var web = document.getElementById("gameFramey");
       web.contentWindow.location.reload();
-      //web.src += ""
     }
+  </script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      if (document.documentElement.requestFullscreen) {
+        document.documentElement.requestFullscreen();
+      } else if (document.documentElement.mozRequestFullScreen) { 
+        document.documentElement.mozRequestFullScreen();
+      } else if (document.documentElement.webkitRequestFullscreen) {
+        document.documentElement.webkitRequestFullscreen();
+      } else if (document.documentElement.msRequestFullscreen) {
+        document.documentElement.msRequestFullscreen();
+      }
+    });
   </script>
 </body>
   <script src="/assets/scripts/s1.js"></script>
