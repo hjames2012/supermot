@@ -39,7 +39,7 @@ body {
   a.link:hover {
     font-family: 'Plus Jakarta Sans', sans-serif;
     background-color: transparent;
-    transform: scale(1.05);
+    transform: scale(1.04);
     color: var(--txtcolor);
     padding: 1px 1px;
     text-align: center;
@@ -71,7 +71,7 @@ body {
     border-radius: 12px;
     transition: background-color 0.3s,
       color 0.2s, transform 0.7s, border 0.3s;
-    display: inline-block;
+      display: inline-block;
   }
 
   .navbar {
