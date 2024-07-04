@@ -55,7 +55,7 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            height: 780px;
+            height: 635px;
           }
 
           #game-container iframe {
@@ -166,26 +166,71 @@
             }
           }
 
-          .menu-area {
-      background-color:transparent;
-      height:330px;
-      transition:1s;
-    }
+          .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: fixed;
+            top: 94.9%;
+            left:0;
+            right:0;
+            margin-left: auto;
+            margin-right: auto;
+            width: 80%;
+            height:50px;
+            background-color: var(--navbar);
+            color: white;
+            box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease;
+            z-index: 1000;
+        }
+        .navbar:hover {
+            transform: translateY(-30px);
+        }
+        .navbar .icon {
+            display: flex;
+            align-items: center;
+        }
+        .navbar .icon img {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+        .navbar .title {
+            flex-grow: 1;
+            text-align: center;
+            font-size: 1.2em;
+        }
+        .navbar .buttons {
+            display: flex;
+            align-items: center;
+            justify-content:center;
+        }
+        .navbar .buttons .btn {
+            width: 30px;
+            height: 30px;
+            background-color: #333;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-left: 10px;
+        }
+        @media screen and (max-width: 768px) {
+            .navbar .title {
+                font-size: 1em;
+            }
+            .navbar .icon img {
+                width: 30px;
+                height: 30px;
+            }
+            .navbar .buttons .btn {
+                width: 25px;
+                height: 25px;
+            }
+        }
 
-.menu-area:hover {
-  transform:translateY(-20.5rem);
-}
-
-    .menu {
-      transition:1s;
-      border-radius: 20px;
-      background: var(--navbar);
-      position:absolute;
-      text-align: center;
-      justify-content: center;
-      width:100%;
-      top:100%;
-    }
         </style>
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-TQ8CVXYBF9"></script>
@@ -216,13 +261,16 @@
             <br>
           </div>
           <br>
-          <div class="menu-area">
-            <div class="menu">
-            <a style="color: var(--txtcolor); background: transparent; text-decoration: none; font-size: 30px;  margin: 0px 10px;" href="/english/"><i class="fa-solid fa-angle-left"></i> Back</a>
+          <div class="navbar">
+            <div class="icon">
+              <a href="/"><img src="/assets/images/jmw.png" alt="Icon"></a>
+            </div>
+            <div class="buttons">
+              <a style="color: var(--txtcolor); background: transparent; text-decoration: none; font-size: 30px;  margin: 0px 10px;" href="/english/"><i class="fa-solid fa-angle-left"></i> Back</a>
               <button onclick="reload()" style="background: transparent; width: 50px; right: 0;   margin: 0px 10px;" class="reload"><i class="fa-solid fa-rotate-right"></i></button>
             <button onclick="toggleFullscreen()" style="background: transparent; width: 50px; right: 0;  margin: 0px 10px;" class="fullscreen"><i class="fa-solid fa-expand"></i></button>
             </div>
-            </div>
+        </div>
           </div>
         </div>
         </div>
