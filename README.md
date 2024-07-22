@@ -1,5 +1,5 @@
 
-<p align="center"><img src="https://github.com/GalacticNetwork/jordansmathwork-v5/blob/main/assets/images/jmw.png?raw=true" height="200">
+<p align="center"><img src="https://github.com/GalacticNetwork/jordansmathwork-v6/blob/main/assets/images/jmw.png?raw=true" height="200">
 </p>
 
 <h1 align="center"><strong>JordansMathWork V6</strong></h1>
