@@ -3,8 +3,8 @@
 </p>
 
 <h1 align="center"><strong>JordansMathWork V6</strong></h1>
-<p align="center">The forigen key to unblocked games</p>
-<h1 align="center"><a align="center" href="//infinitetutoring.online">Live demo</a></h1>
+<p align="center">The forigen key to unblocked games.</p>
+<h1 align="center"><a align="center" href="//jmwubg.xyz">Live demo</a></h1>
 
 ### Features:
 - 300+ games
