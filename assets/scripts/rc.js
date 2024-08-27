@@ -37,16 +37,6 @@ document.addEventListener('DOMContentLoaded', (event) => {
         contextMenu.style.display = 'none';
     };
 
-        const inspect = document.createElement('div');
-    inspect.innerHTML = '<i class="fa-solid fa-code"></i> Unblocked Inspect Element';
-    inspect.style.padding = '8px';
-    inspect.style.cursor = 'pointer';
-    inspect.style.color = 'var(--txtcolor)';
-    inspect.onclick = function() {
-        inspectFunction();
-        contextMenu.style.display = 'none';
-    };
-
     const viewAllSettings = document.createElement('div');
     viewAllSettings.innerHTML = '<i class="fa-solid fa-users-gear"></i> View All Settings';
     viewAllSettings.style.padding = '8px';
@@ -105,10 +95,6 @@ document.addEventListener('DOMContentLoaded', (event) => {
     <\x2fscript>',
         );
         location.replace("https://classroom.google.com");
-    }
-
-    function inspectFunction() {
-    (function(){var script=document.createElement('script');script.src='//fastly.jsdelivr.net/npm/eruda';document.body.appendChild(script);script.onload=function(){eruda.init()}})()
     }
 
 });
