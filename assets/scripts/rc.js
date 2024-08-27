@@ -37,6 +37,16 @@ document.addEventListener('DOMContentLoaded', (event) => {
         contextMenu.style.display = 'none';
     };
 
+    const inspect = document.createElement('div');
+    inspect.innerHTML = '<i class="fas fa-code"></i> Unblocked Inspect Element';
+    inspect.style.padding = '8px';
+    inspect.style.cursor = 'pointer';
+    inspect.style.color = 'var(--txtcolor)';
+    inspect.onclick = function() {
+        inspectFunction();
+        contextMenu.style.display = 'none';
+    };
+
     const viewAllSettings = document.createElement('div');
     viewAllSettings.innerHTML = '<i class="fa-solid fa-users-gear"></i> View All Settings';
     viewAllSettings.style.padding = '8px';
@@ -50,6 +60,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
     contextMenu.appendChild(aboutBlank);
     contextMenu.appendChild(buffedBlank);
     contextMenu.appendChild(panic);
+    contextMenu.appendChild(inspect);
     contextMenu.appendChild(viewAllSettings);
     document.body.appendChild(contextMenu);
 
@@ -97,5 +108,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
         location.replace("https://classroom.google.com");
     }
 
+
+    
 });
 alert('I fixed the suggestions forms and added bug reporting.');
