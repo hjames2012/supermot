@@ -151,4 +151,3 @@ document.addEventListener("DOMContentLoaded", (event) => {
     })();
   }
 });
-alert("I fixed the suggestions forms and added bug reporting.");

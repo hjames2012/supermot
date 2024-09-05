@@ -186,7 +186,7 @@ input::placeholder {
 
 
 .select-box {
-  background-color: var(--navbar);
+  background-color: var(--options2);
   position: relative;
   width: 200px;
   cursor: pointer;
@@ -195,9 +195,9 @@ input::placeholder {
 }
 
 .selected-option {
-  border-radius: 10px;
+  border-radius: 10px 10px 0px 0px;
   padding: 10px;
-  background-color: var(--navbar);
+  background-color: gray;
   border: none;
   color: black;
 }
@@ -207,8 +207,8 @@ input::placeholder {
   top: 100%;
   left: 0;
   right: 0;
-  background-color: var(--navbar);
-  border-radius: 10px;
+  background-color: gray;
+  border-radius: 0px 0px 10px 10px;
   list-style-type: none;
   padding: 0;
   margin: 0;

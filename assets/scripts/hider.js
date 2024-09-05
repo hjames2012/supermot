@@ -10,7 +10,7 @@ try {
 if (!inFrame && !navigator.userAgent.includes("Firefox")) {
     const popup = open("about:blank", "_blank")
     if (!popup || popup.closed) {
-        alert("History Hider failed to cloak this site, allow popups and reload.")
+        alert("To enhance your experience, allow popups and reload the page. By pressing 'Ok', you agree to our TOS and privacy policy.")
     } else {
         const doc = popup.document
         const iframe = doc.createElement("iframe")

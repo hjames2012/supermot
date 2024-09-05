@@ -112,7 +112,7 @@ h1{
 <body theme="classic">
     <div class="center">
     <center>
-        <h1>Deploying Engine...</h1>
+        <h1 id="subtitle"></h1>
         <p id="loading">Trash Wi-Fi may cause high loading times.</p>
         <div class="center">
         <svg version="1.1" id="L5" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 100 100" enable-background="new 0 0 0 0" xml:space="preserve">
@@ -135,4 +135,33 @@ h1{
 <script src="/static/register-sw.js"></script>
 <script src="/static/error.js"></script>
 <script src="/static/embed.js"></script>
+<script>
+  function changeSub(num) {
+      document.getElementById("subtitle").innerText = say[num];
+    }
+
+
+    var say = [];
+    say[0] = "Deploying Engine..";
+    say[1] = "Starting Systems..";
+    say[2] = "Registering SW..";
+    say[3] = "Loading Application..";
+    say[4] = "Starting Systems..";
+
+
+    // pick a random greeting
+    var howmany = say.length;
+    var bRand = 0;
+    bRand = Math.random();
+    bRand = Math.floor(bRand * howmany);
+    sayWhat = say[bRand];
+    document.getElementById("subtitle").innerText = sayWhat;
+
+    function changeSplash(num) {
+      document.getElementById("subtitle").innerText = say[num];
+      var ret = "Set current splash to splash " + num + ", " + say[num];
+      return ret;
+    }
+    // credit to 3kh0 for the code :)
+</script>
 </html>

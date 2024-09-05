@@ -80,14 +80,21 @@ body[theme="versatile"] {
   --txtcolor: #d7cccc;
 }
 body[theme="plexile"] {
-  background: url(https://cdn.glitch.global/8ccf4cfa-741f-4630-8f29-733b36d972e6/f97cae64-03b4-4b89-94ec-0dacf077ea89.image.png?v=1705798388344);
+  --bgcolor: #0F0F0F;
   --navbar: #16181c62;
   --txtcolor: #b03232;
 }
 body[theme="blueblack"] {
-  background: url(https://cdn.glitch.global/32522aaa-b118-401b-8f22-be0a0b08fdaa/gradient.png?v=1710524670795);
+  background: url(https://iili.io/dk1mX8x.jpg);
+  background-repeat:no-repeat;
+  background-attachment:fixed;
+  webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
   --navbar: rgba(0, 0, 0, 0.305);
   --txtcolor: #d7cccc;
+  --color2:white;
 }
 body[theme="redblack"] {
   background: url(https://iili.io/JWt6ZTx.png);
