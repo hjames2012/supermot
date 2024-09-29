@@ -6,7 +6,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <meta name="Jordansmathwork">
 <script>
-  alert('Instagram and Discord officially work!')
+  document.addEventListener("DOMContentLoaded", function() {
+            if (!localStorage.getItem('alertShown')) {
+                alert("Instagram and Discord officially work!");
+
+                localStorage.setItem('alertShown', 'true');
+            }
+        })
 </script>
   <meta content="Jordansmathwork" property="og:title">
 

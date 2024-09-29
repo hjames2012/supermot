@@ -317,9 +317,15 @@
             document.getElementById('gameFramey').src = "/english/src/" + file
           }
         </script>
-          <script>
-    alert('if your in lausd or something like that (a person reached out to me) make sure to switch to LAUSD internet, not charter');
-  </script>
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+            if (!localStorage.getItem('alertShown')) {
+                alert("if your in lausd or something like that (a person reached out to me) make sure to switch to LAUSD internet, not charter");
+
+                localStorage.setItem('alertShown', 'true');
+            }
+        })
+</script>
         <script>
           function toggleFullscreen() {
             let elem = document.querySelector('.abc');
