@@ -1,6 +1,6 @@
 self.__uv$config = {
     prefix: '/static/jmwsw/',
-    bare: 'https://mathematicalgebra.vercel.app/bear/',
+    bare: 'https://mathematicalgebra-beta.vercel.app/bear/',
     encodeUrl: Ultraviolet.codec.xor.encode,
     decodeUrl: Ultraviolet.codec.xor.decode,
     handler: '/static/uv/uv.handler.js',
