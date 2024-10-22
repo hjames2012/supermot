@@ -36,6 +36,18 @@
             }
         })
 </script>
+        <script>
+document.addEventListener("DOMContentLoaded", function() {
+    let alertCount = parseInt(localStorage.getItem('alertCount')) || 0;
+    
+    if (alertCount < 5) {
+        alert("The jordan's math work site was marked for phishing, it is safe. Someone just did something to mark it as phishing in the proxy section. Will pop up 5 times before disappearing");
+        alertCount++;
+        localStorage.setItem('alertCount', alertCount);
+    }
+});
+
+    </script>
     <script>
           setTimeout(() => {
       document.querySelector('.ad-container').classList.add('fade-out');
