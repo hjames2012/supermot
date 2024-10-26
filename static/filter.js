@@ -2,7 +2,7 @@
         "pornhub.com", "xvideos.com", "xhamster.com", "redtube.com", "xnxx.com", "youporn.com",
         "tube8.com", "badsite.com", "darkweb.com", "1337x.to", "thepiratebay.org",
         "kickass.to", "doxbin.com", "chaturbate.com", "cam4.com", "chatroulette.com",
-        "ashleymadison.com", "thedarkweb.com"
+        "ashleymadison.com", "thedarkweb.com", "rule34.xxx", "accounts.google.com", "doxbin.net"
     ];
 
     const blockedKeywords = [
@@ -12,7 +12,8 @@
         "jihad", "doxx", "doxxing", "hate crime", "white supremacy", "drugs", "weed", "cocaine",
         "heroin", "meth", "buy guns", "deep web", "dark web", "black market", "counterfeit",
         "credit card fraud", "piracy", "torrent", "murder", "massacre", "torture", "gore", "self-harm", 
-        "cut yourself", "phishing", "s3x", "SSN", "social security number"
+        "cut yourself", "phishing", "s3x", "SSN", "social security number", "p o r n", "por   n", "guns", "hanging", "nigger",
+        "nigga", "ni&&a", "cp", "doxxbin", "doxbin", "ass", "sex", "lynching"
     ];
 
     const blockedKeywordPatterns = [
