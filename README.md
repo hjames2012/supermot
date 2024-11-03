@@ -7,7 +7,7 @@
 <h1 align="center"><a align="center" href="//jmwubg.xyz">Live demo</a></h1>
 
 ### Features:
-- 300+ games
+- 400+ games
 - automatic about:blank system
 - Clean UI
 - Blazing Fast proxy
@@ -15,12 +15,13 @@
 # Credits
 - <a href="//github.com/slqntdevss">Slqnt - themes function and css</a>
 - <a href="//github.com/albibos">Albinus - games and apps function</a>
-- <a href="//sites.google.com/view/classroom6x">Classroom6x - 70% of the games</a>
+- <a href="//classroom-6x.site">Classroom6x - 70% of the games</a>
 - <a href="//github.com/3kh0">3kh0 - 30% of the games</a>
 - <a href="//github.com/anthonyishimlolz">Clipped - CSS designer</a>
 - <a href="//github.com/binbashbanana">BinBashBanana -.swf game files</a>
 - <a href="//github.com/titaniumnetwork-dev/Alloy">Titanium Network - proxy we use for apps</a>
 # Deployment
+<h1 align="center">JMW can be deployed to any static service, including cloudflare pages and kinsta pages. Make sure it supports github and can take these files!</h1>
 <a target="_blank" href="https://heroku.com/deploy/?template=https://github.com/GalacticNetwork/jordansmathwork-v6"><img alt="Deploy to Heroku" src="https://binbashbanana.github.io/deploy-buttons/buttons/remade/heroku.svg"></a>
 <a target="_blank" href="https://app.netlify.com/start/deploy?repository=https://github.com/GalacticNetwork/jordansmathwork-v6"><img alt="Deploy to Netlify" src="https://binbashbanana.github.io/deploy-buttons/buttons/remade/netlify.svg"></a>
 <a target="_blank" href="https://vercel.com/new/clone?repository-url=https://github.com/GalacticNetwork/jordansmathwork-v6"><img alt="Deploy to Vercel" src="https://binbashbanana.github.io/deploy-buttons/buttons/remade/vercel.svg"></a>
