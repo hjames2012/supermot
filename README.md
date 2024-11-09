@@ -21,7 +21,7 @@
 - <a href="//github.com/binbashbanana">BinBashBanana -.swf game files</a>
 - <a href="//github.com/titaniumnetwork-dev/Alloy">Titanium Network - proxy we use for apps</a>
 # Deployment
-<h1 align="center">JMW can be deployed to any static service, including cloudflare pages and kinsta pages. Make sure it supports github and can take these files!</h1>
+# JMW can be deployed to any static service, including cloudflare pages and kinsta pages. Make sure it supports github and can take these files!
 <a target="_blank" href="https://heroku.com/deploy/?template=https://github.com/GalacticNetwork/jordansmathwork-v6"><img alt="Deploy to Heroku" src="https://binbashbanana.github.io/deploy-buttons/buttons/remade/heroku.svg"></a>
 <a target="_blank" href="https://app.netlify.com/start/deploy?repository=https://github.com/GalacticNetwork/jordansmathwork-v6"><img alt="Deploy to Netlify" src="https://binbashbanana.github.io/deploy-buttons/buttons/remade/netlify.svg"></a>
 <a target="_blank" href="https://vercel.com/new/clone?repository-url=https://github.com/GalacticNetwork/jordansmathwork-v6"><img alt="Deploy to Vercel" src="https://binbashbanana.github.io/deploy-buttons/buttons/remade/vercel.svg"></a>
