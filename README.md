@@ -15,7 +15,7 @@
 # Credits
 - <a href="//github.com/slqntdevss">Slqnt - themes function and css</a>
 - <a href="//github.com/albibos">Albinus - games and apps function</a>
-- <a href="//classroom-6x.site">Classroom6x - 70% of the games (is now deleted LOL)</a>
+- <a href="//classroom-6x.site">Classroom6x - 70% of the games</a>
 - <a href="//github.com/3kh0">3kh0 - 30% of the games</a>
 - <a href="//github.com/willoo0">Clipped - CSS designer</a>
 - <a href="//github.com/binbashbanana">BinBashBanana -.swf game files</a>
