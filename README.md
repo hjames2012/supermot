@@ -22,7 +22,9 @@
 - <a href="//github.com/titaniumnetwork-dev/Alloy">Titanium Network - proxy we use for apps</a>
 # Deployment
 # JMW can be deployed to any static service, including cloudflare pages and kinsta pages. Make sure it supports github and can take these files!
+## Paid
 <a target="_blank" href="https://heroku.com/deploy/?template=https://github.com/GalacticNetwork/jordansmathwork-v6"><img alt="Deploy to Heroku" src="https://binbashbanana.github.io/deploy-buttons/buttons/remade/heroku.svg"></a>
+## Free
 <a target="_blank" href="https://app.netlify.com/start/deploy?repository=https://github.com/GalacticNetwork/jordansmathwork-v6"><img alt="Deploy to Netlify" src="https://binbashbanana.github.io/deploy-buttons/buttons/remade/netlify.svg"></a>
 <a target="_blank" href="https://vercel.com/new/clone?repository-url=https://github.com/GalacticNetwork/jordansmathwork-v6"><img alt="Deploy to Vercel" src="https://binbashbanana.github.io/deploy-buttons/buttons/remade/vercel.svg"></a>
 <a target="_blank" href="https://render.com/deploy?repo=https://github.com/GalacticNetwork/jordansmathwork-v6"><img alt="Deploy to Render" src="https://binbashbanana.github.io/deploy-buttons/buttons/remade/render.svg"></a>
