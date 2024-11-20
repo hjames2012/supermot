@@ -1,6 +1,6 @@
 self.__uv$config = {
     prefix: '/static/jmwsw/',
-    bare: 'https://abyss-web-intel.vercel.app/bare/',
+    bare: 'https://bare2.mysticmath.workers.dev/',
     encodeUrl: Ultraviolet.codec.xor.encode,
     decodeUrl: Ultraviolet.codec.xor.decode,
     handler: '/static/uv/uv.handler.js',
