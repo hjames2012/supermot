@@ -2,7 +2,7 @@ const blockedSites = [
     "pornhub.com", "xvideos.com", "xhamster.com", "redtube.com", "xnxx.com", "youporn.com",
     "tube8.com", "badsite.com", "darkweb.com", "1337x.to", "thepiratebay.org",
     "kickass.to", "doxbin.com", "chaturbate.com", "cam4.com", "chatroulette.com",
-    "ashleymadison.com", "thedarkweb.com"
+    "ashleymadison.com", "thedarkweb.com", "theporndude.com"
 ];
 
 const blockedKeywords = [
@@ -12,7 +12,7 @@ const blockedKeywords = [
     "jihad", "doxx", "doxxing", "hate crime", "white supremacy", "drugs", "weed", "cocaine",
     "heroin", "meth", "buy guns", "deep web", "dark web", "black market", "counterfeit",
     "credit card fraud", "piracy", "torrent", "murder", "massacre", "torture", "gore", "self-harm", 
-    "cut yourself", "phishing", "s3x", "SSN", "social security number"
+    "cut yourself", "phishing", "s3x", "SSN", "social security number", "how to make meth", "child", "fucked up family", "government"
 ];
 
 const blockedKeywordPatterns = [
@@ -41,8 +41,8 @@ document.getElementById('uv-form').addEventListener('submit', function(event) {
 
     if (isBlockedSite(inputValue) || containsBlockedKeyword(inputValue) || containsBlockedKeywordPattern(inputValue)) {
         event.preventDefault(); 
-        document.getElementById('uv-error').innerText = "Access to this site or search term is blocked!";
-        document.getElementById('uv-error-code').innerText = `Blocked content detected: ${inputValue}`;
+        document.getElementById('uv-error').innerText = "This search term has been blocked.";
+        document.getElementById('uv-error-code').innerText = `You searched: ${inputValue}, and is determined 'unsafe'.`;
         document.getElementById('uv-address').blur(); 
     } else {
         document.getElementById('uv-error').innerText = ""; 
@@ -56,7 +56,7 @@ document.getElementById('uv-address').addEventListener('keydown', function(event
         
         if (isBlockedSite(inputValue) || containsBlockedKeyword(inputValue) || containsBlockedKeywordPattern(inputValue)) {
             event.preventDefault(); 
-            document.getElementById('uv-error-code').innerText = `Blocked content detected: ${inputValue}`;
+            document.getElementById('uv-error-code').innerText = ` ${inputValue}`;
             this.blur(); 
         }
     }
