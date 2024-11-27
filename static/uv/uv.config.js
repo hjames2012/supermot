@@ -1,6 +1,6 @@
 self.__uv$config = {
     prefix: '/static/jmwsw/',
-    bare: 'https://itsnotrightorwrong.us.to/bare/',
+    bare: 'http://tinfoilisbad.us.to/bare/',
     encodeUrl: Ultraviolet.codec.xor.encode,
     decodeUrl: Ultraviolet.codec.xor.decode,
     handler: '/static/uv/uv.handler.js',
