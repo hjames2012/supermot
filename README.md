@@ -3,7 +3,7 @@
 </p>
 
 <h1 align="center"><strong>JordansMathWork V6</strong></h1>
-<p align="center">The forigen key to unblocked games.</p>
+<p align="center">It's not just unblocked games; It's nostalgia.</p>
 <h1 align="center"><a align="center" href="//jmwubg.xyz">Live demo</a></h1>
 
 ### Features:
