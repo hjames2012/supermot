@@ -1,5 +1,5 @@
 self.__uv$config = {
-    prefix: '/jordans/mathwork/',
+    prefix: '/static/jmwsw/',
     bare: 'https://finalchanceyoubum.us.to/bare/',
     encodeUrl: Ultraviolet.codec.xor.encode,
     decodeUrl: Ultraviolet.codec.xor.decode,
