@@ -4,7 +4,7 @@
 
 <h1 align="center"><strong>JordansMathWork V6</strong></h1>
 <p align="center">It's not just unblocked games; It's nostalgia.</p>
-<h1 align="center"><a align="center" href="//jmwubg.xyz">Live demo</a></h1>
+<h1 align="center"><a align="center" href="//jordansmath.work">Live demo</a></h1>
 
 ### Features:
 - 400+ games
