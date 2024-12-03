@@ -1,4 +1,5 @@
->[!please consider leaving a star
+> [!yo]
+> Please consider
 <p align="center"><img src="https://github.com/GalacticNetwork/jordansmathwork-v6/blob/main/assets/images/jmw.png?raw=true" height="200">
 </p>
 
