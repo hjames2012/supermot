@@ -218,7 +218,11 @@ text-decoration: none;
       </div>
       <div id="content">
          <h2>Jordan's Math Work Engine</h2>
-
+ <label for="bareSwitcher">Select Bare Server:</label>
+    <select id="bareSwitcher">
+      <option value="https://introducing.wine-software.com/bare/">Wine Software Bare</option>
+      <option value="https://onthe.hyppe.club">Hyppe Club Bare</option>
+    </select>
          <form id="uv-form">
             <input id="uv-search-engine" value="https://duckduckgo.com/?q=%s" type="hidden"/> 
             <input id="uv-address" type="text" placeholder="Type search query or URL" class="form__input"/>
@@ -243,6 +247,7 @@ text-decoration: none;
       <script src="/static/search.js" defer></script>
       <script src="/static/index.js" defer></script>
       <script src="/static/error.js" defer></script>
+      <script src="/static/bare.js" defer></script>
       <!--keeping young children safe with this-->
       <script src="/static/filter.js" defer></script>
       <!--you're welcome parents-->
