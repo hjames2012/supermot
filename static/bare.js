@@ -1,10 +1,14 @@
 const dropdown = document.getElementById("bareSwitcher");
 
-const savedBare = localStorage.getItem("bareServer");
-if (savedBare) {
-  dropdown.value = savedBare;
-  updateBareServer(savedBare);
+const DEFAULT_BARE = "https://introducing.wine-software.com/bare/";
+const ALTERNATE_BARE = "https://onthe.hyppe.club/bare/";
+
+if (!localStorage.getItem("bareServer")) {
+  localStorage.setItem("bareServer", DEFAULT_BARE);
 }
+updateBareServer(localStorage.getItem("bareServer"));
+
+dropdown.value = localStorage.getItem("bareServer");
 
 dropdown.addEventListener("change", (event) => {
   const selectedBare = event.target.value;
