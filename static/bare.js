@@ -1,7 +1,7 @@
 const dropdown = document.getElementById("bareSwitcher");
 
-const DEFAULT_BARE = "https://introducing.wine-software.com/bare/";
-const ALTERNATE_BARE = "https://onthe.hyppe.club/bare/";
+const DEFAULT_BARE = "https://itsnotrightorwrong.us.to/bare/";
+const ALTERNATE_BARE = "https://introducing.wine-software.com/bare/";
 
 if (!localStorage.getItem("bareServer")) {
   localStorage.setItem("bareServer", DEFAULT_BARE);
