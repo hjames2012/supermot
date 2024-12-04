@@ -1,6 +1,6 @@
 self.__uv$config = {
   prefix: '/static/jmwsw/',
-  bare: 'https://introducing.wine-software.com/bare/',
+  bare: 'https://itsnotrightorwrong.us.to/bare/',
   encodeUrl: Ultraviolet.codec.xor.encode,
   decodeUrl: Ultraviolet.codec.xor.decode,
   handler: '/static/uv/uv.handler.js',
