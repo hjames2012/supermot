@@ -1,7 +1,8 @@
 body[theme="classic"] {
+  background: url('https://duquesnehunky.com/wp-content/uploads/2011/11/snow-falling-animated.gif');
   --bgcolor: #222;
-  --navbar: #30303062;
-  --txtcolor: #adad43;
+  --navbar: rgba(255, 0, 0, 0.283);
+  --txtcolor: lightgreen;
 }
 
 body[theme="light"] {

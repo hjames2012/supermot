@@ -1,0 +1,5 @@
+body[theme="classic"] {
+  --bgcolor: #222;
+  --navbar: #30303062;
+  --txtcolor: #adad43;
+}
