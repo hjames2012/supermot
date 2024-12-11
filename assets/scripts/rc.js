@@ -171,7 +171,7 @@ function chatFunction() {
   iframe.style.top = '10px';
   iframe.style.left = '10px';
   iframe.style.width = '35%';
-  iframe.style.height = '100%';
+  iframe.style.height = '91%';
   iframe.style.border = '1px solid var(--txtcolor)';
   iframe.style.zIndex = '1000';
   iframe.style.display = 'none';
