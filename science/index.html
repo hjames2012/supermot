@@ -1,4 +1,5 @@
 
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -41,7 +42,6 @@
     </script>
   <style>
     .iframe {
-      float: center;
         width: 100%; 
       height: 100%;
       text-align: center;
@@ -72,16 +72,12 @@
     }
 
     #game-container {
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
       height: 780px;
     }
 
     #game-container iframe {
       border: none;
-      float: center;
-        width: 1300px; 
+        width: 800px; 
       height: 475px;
       text-align: center;
       border-radius: 5px;
@@ -185,6 +181,11 @@
         transform: translate(-50%, -50%) rotate(360deg);
       }
     }
+    .chat-section {
+      width:550px;
+      height:450px;
+      float:left;
+    }
   </style>
 </head>
 
@@ -202,7 +203,7 @@
         <li class="nav-item"><a href="/geography" class="nav-link"><i class="fa-regular fa-gear-complex"></i> Settings</a></li>
     </ul>
 </nav>
-  <div align="center">
+      <div align="center">
   <script type="text/javascript">
     function googleTranslateElementInit() {
       new google.translate.TranslateElement({ pageLanguage: "en", layout: google.translate.TranslateElement.InlineLayout.HORIZONTAL }, "google_translate_element");
@@ -222,9 +223,12 @@
   </div>
   </div>
   <br>
-  
+
   <div id="game-container" style="border-radius: 20px; background: var(--txtcolor); height: 500px;">
     <div class="iframe">
+      <div class="chat-section">
+          <iframe style="width:100%;height:100%;"src="/science/2/index.html"></iframe>
+      </div>
       <iframe
         class="abc" id="gameFramey"></iframe>
       <br>
@@ -274,7 +278,7 @@
     }
   </script>
 </body>
-<script src="/assets/scripts/fade.js"></script>
+  <script src="/assets/scripts/fade.js">
   <script src="/assets/scripts/s1.js"></script>
   <script src="/assets/scripts/s2.js"></script>
   <script src="/assets/scripts/index.js"></script>
