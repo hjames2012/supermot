@@ -23,11 +23,8 @@ body {
     box-sizing: border-box;
     margin-bottom: 20px;
     width: 100%;
-    /* Occupy full width */
     max-width: 400px;
-    /* Limit maximum width */
     margin: 20px auto;
-    /* Center horizontally */
     border-radius: 10px;
     border: solid 2px #333;
     user-select: none;
