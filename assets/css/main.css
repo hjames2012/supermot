@@ -354,7 +354,7 @@ video {
       transform: translateX(0);
   }
   50% {
-      transform: translateX(-31%);
+      transform: translateX(-36%);
   }
 }
 
