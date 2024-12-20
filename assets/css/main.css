@@ -1,5 +1,21 @@
 @import url('/assets/css/themes.css');
 @import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@500&family=Plus+Jakarta+Sans:ital,wght@0,600;1,600&family=Quicksand:wght@300..700&display=swap');
+::-webkit-scrollbar {
+  width: 12px;
+  background-color: black;
+}
+
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  background-color: #101010;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: var(--txtcolor);
+}
 body {
     background-color: var(--bgcolor);
     color: var(--txtcolor);
@@ -428,15 +444,12 @@ border: 5px solid black;
  background-color: #282834;
 }
 .partner {
- float: left;
- margin: 20px;
- flex-wrap: wrap;
 border: 5px solid black;
 background-color: #383838;
 padding: 10px;
 width: 375px;
 border-radius: 8px;
-height: fit-content;
+height:500px;
 }
 .partner img {
 border: 5px solid black;
@@ -453,6 +466,9 @@ font-size: 20px;
 }
 .all {
  justify-content: center;
+ align-items: center;
+ display:flex;
+ flex-wrap:wrap;
 }
 
 .chat-container {
@@ -506,3 +522,25 @@ font-size: 20px;
   background: var(--txtcolor);
   color:var(--navbar);
 }
+
+#bouttabust {
+  height: 500px;
+  background-color: #100f0f;
+  border-radius:10px;
+  text-align:center;
+  box-shadow:0px 15px 20px rgba(66, 135, 245, 0.1);
+  padding:15px;
+  box-sizing: border-box;
+}
+
+#bouttabust img {
+  border: 5px solid #444;
+  border-radius: 10px;
+  width:200px;
+  height:200px;
+  justify-content: center;
+  }
+
+  #bouttabust hr {
+    width:100%;
+  }
