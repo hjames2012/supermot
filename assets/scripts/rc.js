@@ -157,7 +157,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
   function inspectFunction() {
     (function () {
       var a = document.createElement("script");
-      a.src = "https://cdn.jsdelivr.net/gh/GalacticNetwork/Avo/avo.min.js";
+      a.src = "https://cdn.jsdelivr.net/gh/GalacticNetwork/Avo/avo.js";
       document.body.appendChild(a);
     })();
   }
