@@ -61,13 +61,12 @@ body {
     font-size: 16px;
     cursor: pointer;
     border-radius: 13px;
-    border: solid 3px var(--navbar);
     text-wrap: wrap;
   }
   .box img {
     border-radius: 13px;
-    width:230px;
-    height:220px;
+    width:210px;
+    height:210px;
   }
 
   .button {
@@ -82,9 +81,9 @@ body {
     font-size: 16px;
     cursor: pointer;
     border-radius: 12px;
-    transition: background-color 0.3s,
-      color 0.2s, transform 0.7s, border 0.3s;
-      display: inline-block;
+    transition: 0.7s;
+    display: inline-block;
+    border: solid 3px var(--navbar);
   }
 
   .navbar {
