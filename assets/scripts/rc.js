@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
   aboutBlank.style.cursor = "pointer";
   aboutBlank.style.color = "var(--txtcolor)";
   aboutBlank.onclick = function () {
-    buffedAB();
+    aboutBlankFunction();
     contextMenu.style.display = "none";
   };
 
@@ -24,7 +24,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
   buffedBlank.style.cursor = "pointer";
   buffedBlank.style.color = "var(--txtcolor)";
   buffedBlank.onclick = function () {
-    aboutBlankFunction();
+    buffedAB();
     contextMenu.style.display = "none";
   };
 
@@ -157,7 +157,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
   function inspectFunction() {
     (function () {
       var a = document.createElement("script");
-      a.src = "https://cdn.jsdelivr.net/gh/GalacticNetwork/Avo/avo.min.js";
+      a.src = "https://cdn.jsdelivr.net/gh/GalacticNetwork/Avo/avo.js";
       document.body.appendChild(a);
     })();
   }
