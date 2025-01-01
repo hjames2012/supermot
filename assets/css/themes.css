@@ -1,14 +1,7 @@
 body[theme="classic"] {
-  background: url('/assets/images/bg.png');
   --bgcolor: #222;
-  --navbar: rgba(255, 0, 0, 0.283);
-  --txtcolor: lightgreen;
-  background-repeat:no-repeat;
-  background-attachment:fixed;
-  webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+  --navbar: #30303062;
+  --txtcolor: #adad43;
 }
 
 body[theme="light"] {
