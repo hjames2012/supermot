@@ -190,10 +190,10 @@ input::placeholder {
 }
 
 #customContextMenu {
-  border: 1px solid var(--txtcolor);
-  background-color: var(--navbar);
+  background-color: #111;
   color: var(--txtcolor);
-  border-radius: 10px;
+  border-radius: 4px;
+  box-shadow: 0px 0px 10px var(--txtcolor);
 }
 
 
@@ -253,11 +253,9 @@ button {
 }
 
 button:hover {
-    background-color: var(--navbar);
     cursor: pointer;
     color: white;
-      box-shadow: 0px 15px 20px rgba(66, 135, 245, 0.1);
-      transform:scale(1.2);
+    transform:scale(1.05);
 }
 
 .setinput {

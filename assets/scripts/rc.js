@@ -3,8 +3,8 @@ document.addEventListener("DOMContentLoaded", (event) => {
   contextMenu.id = "customContextMenu";
   contextMenu.style.position = "absolute";
   contextMenu.style.display = "none";
-  contextMenu.style.backgroundColor = "var(--navbar)";
-  contextMenu.style.border = "1px solid #ccc";
+  contextMenu.style.backgroundColor = "var(--navbar, #111);";
+  contextMenu.style.boxShadow = "var(--txtcolor);";
   contextMenu.style.zIndex = "1000";
 
   const aboutBlank = document.createElement("div");
