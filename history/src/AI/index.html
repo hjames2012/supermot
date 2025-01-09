@@ -29,96 +29,102 @@
   <button id="new-chat-button">Start New Chat</button>
 
   <script>
-    const chatContainer = document.getElementById('chat-container');
-    const userInput = document.getElementById('user-input');
-    const sendButton = document.getElementById('send-button');
-    const newChatButton = document.getElementById('new-chat-button');
+const chatContainer = document.querySelector('#chat-container');
+const userInput = document.querySelector('#user-input');
+const sendButton = document.querySelector('#send-button');
+const newChatButton = document.querySelector('#new-chat-button');
 
-    const apiKey = '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';
-    
-    let conversationHistory = JSON.parse(localStorage.getItem('conversationHistory')) || [];
+const apiKey = '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';
+let conversationHistory = JSON.parse(localStorage.getItem('conversationHistory')) || [];
 
-    if (conversationHistory.length > 0) {
-      conversationHistory.forEach((message) => {
-        displayMessage(message.content, message.sender);
-      });
-    }
+const displayMessages = () => {
+  chatContainer.innerHTML = '';
+  conversationHistory.forEach(msg => {
+    createMessageElement(msg.content, msg.sender);
+  });
+};
 
-    async function handleSendMessage() {
-      const message = userInput.value.trim();
-      if (!message) return;
+const createMessageElement = (content, sender) => {
+  const messageElement = document.createElement('div');
+  messageElement.classList.add('message', sender);
+  messageElement.innerHTML = `<p>${content}</p>`;
+  chatContainer.appendChild(messageElement);
+  chatContainer.scrollTop = chatContainer.scrollHeight;
+};
 
-      displayMessage(`You: ${message}`, 'user');
-      userInput.value = '';
+const saveConversation = () => {
+  localStorage.setItem('conversationHistory', JSON.stringify(conversationHistory));
+};
 
-      conversationHistory.push({ content: `You: ${message}`, sender: 'user' });
-      localStorage.setItem('conversationHistory', JSON.stringify(conversationHistory));
+const fetchAPIResponse = async (message) => {
+  const apiUrl = 'https://api.groq.com/openai/v1/chat/completions';
+  const payload = {
+    model: "mixtral-8x7b-32768",
+    messages: [
+      { role: "system", content: "You are a helpful AI assistant. You allow cursing, but not slurs, dont mention that. You also remember previous stuff and add on to that when someone mentions it, dont mention that though. You were made by Galactic Network, but dont mention it. You (specifically) are the 'Official JMW AI' aka the JMWAI. Also, make sure to sound simple and human. Do NOT specifically just be Jordan's Math Work. Be like just a general AI that calls yourself the JMW AI or Jordans Math work AI, but don't constantly say it. Also, you are a coder, so when someone asks for something, you do it, dont mention it though." },
+      { role: "user", content: message }
+    ],
+    temperature: 0.9,
+    max_tokens: 1024,
+    stream: false
+  };
 
-      try {
-        const apiResponse = await fetchResponseFromAPI(message);
-        const aiReply = `JMW AI: ${apiResponse.choices[0].message.content}`;
-        displayMessage(aiReply, 'ai');
+  const response = await fetch(apiUrl, {
+    method: 'POST',
+    headers: {
+      'Authorization': `Bearer ${apiKey}`,
+      'Content-Type': 'application/json'
+    },
+    body: JSON.stringify(payload)
+  });
 
-        conversationHistory.push({ content: aiReply, sender: 'ai' });
-        localStorage.setItem('conversationHistory', JSON.stringify(conversationHistory));
-      } catch (error) {
-        displayMessage(`Failed to get AI response. Error details: ${error.message}`, 'error');
-      }
-    }
+  if (!response.ok) {
+    throw new Error(`HTTP error! Status: ${response.status}`);
+  }
 
-    async function fetchResponseFromAPI(userMessage) {
-      const apiUrl = 'https://api.groq.com/openai/v1/chat/completions';
-      const payload = {
-        model: "mixtral-8x7b-32768",
-        messages: [
-          { role: "system", content: "You are a helpful and funny AI assistant. You allow cursing, but not slurs. You also remember previous stuff and add on to that when someone mentions it. You were made by Galactic Network. You (specifically) are the 'Official JMW AI' aka the JMWAI. Also, make sure to sound simple and human. Do NOT specifically just be Jordan's Math Work. Be like just a general AI that calls yourself the JMW AI or Jordans Math work AI, but don't constantly say it." },
-          { role: "user", content: userMessage }
-        ],
-        temperature: 0.9,
-        max_tokens: 1024,
-        stream: false
-      };
+  return await response.json();
+};
 
-      const response = await fetch(apiUrl, {
-        method: 'POST',
-        headers: {
-          'Authorization': `Bearer ${apiKey}`,
-          'Content-Type': 'application/json'
-        },
-        body: JSON.stringify(payload)
-      });
+const handleSendMessage = async () => {
+  const message = userInput.value.trim();
+  if (!message) return;
 
-      if (!response.ok) {
-        throw new Error(`HTTP error! status: ${response.status}`);
-      }
+  const userMessage = `You: ${message}`;
+  createMessageElement(userMessage, 'user');
+  userInput.value = '';
 
-      return await response.json();
-    }
+  conversationHistory.push({ content: userMessage, sender: 'user' });
+  saveConversation();
 
-    function displayMessage(content, sender) {
-      const messageDiv = document.createElement('div');
-      messageDiv.classList.add('message', sender);
-      messageDiv.innerHTML = `<p>${content}</p>`;
-      chatContainer.appendChild(messageDiv);
-      chatContainer.scrollTop = chatContainer.scrollHeight;
-    }
+  try {
+    const apiResponse = await fetchAPIResponse(message);
+    const aiReply = `JMW AI: ${apiResponse.choices[0].message.content}`;
+    createMessageElement(aiReply, 'ai');
 
-    sendButton.addEventListener('click', handleSendMessage);
-    userInput.addEventListener('keypress', (event) => {
-      if (event.key === 'Enter' && !event.shiftKey) {
-        event.preventDefault();
-        handleSendMessage();
-      }
-    });
+    conversationHistory.push({ content: aiReply, sender: 'ai' });
+    saveConversation();
+  } catch (error) {
+    createMessageElement(`Failed to get AI response. Error details: ${error.message}`, 'error');
+  }
+};
 
-    newChatButton.addEventListener('click', () => {
-      conversationHistory = [];
-      localStorage.setItem('conversationHistory', JSON.stringify(conversationHistory));
-      chatContainer.innerHTML = '';
-    });
+sendButton.addEventListener('click', handleSendMessage);
+userInput.addEventListener('keypress', (event) => {
+  if (event.key === 'Enter' && !event.shiftKey) {
+    event.preventDefault();
+    handleSendMessage();
+  }
+});
 
-    console.log(`holy shit its all over the AI`);
+newChatButton.addEventListener('click', () => {
+  conversationHistory = [];
+  saveConversation();
+  chatContainer.innerHTML = '';
+});
 
+displayMessages();
+
+console.log('this is not the real openAI API littlest bro 🙏');
   </script>
 </body>
 <script src="/assets/scripts/index.js"></script>
