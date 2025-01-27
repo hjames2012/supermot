@@ -1,6 +1,6 @@
 self.__uv$config = {
   prefix: '/static/jmwsw/',
-  bare: 'https://google.ax1951.com/bare/',
+  bare: 'https://frog.vpn.net.br/bare/',
   encodeUrl: Ultraviolet.codec.xor.encode,
   decodeUrl: Ultraviolet.codec.xor.decode,
   handler: '/static/uv/uv.handler.js',
