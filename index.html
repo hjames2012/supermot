@@ -164,67 +164,6 @@ document.addEventListener("DOMContentLoaded", function() {
         font-size:30px;text-decoration: underline;margin:15px;" href="/privacypolicy.html">Privacy Policy</a></p>
         </center>
             </center>
-<div align="center">
-    <h1 style="text-align: center;">Partners</h1>
-    <div align="center">
-    <hr>
-    <div style="display:flex;flex-wrap:wrap;justify-content: center;align-items: center;gap:10px;">
-    <div id="bouttabust">
-      <div class="img">
-        <img src="/pa.png">
-      </div>
-      <h1>PLEXILE Arcade</h1>
-      <p>Those who drink eggnog</p>
-      <hr>
-      <button style="width:150px; font-weight: bold;color:black;" onclick="window.location.href='https://dsc.gg/plexilenetwork'">Join Discord!</button>
-      <br>
-      <button style="width:150px; font-weight: bold;color:black;" onclick="window.location.href='http://12.is-cool.dev'">Free Link</button>
-    </div>
-    <div id="bouttabust">
-      <div class="img">
-        <img src="/fa.gif">
-      </div>
-      <h1>Frogie's Arcade</h1>
-      <p>*Falls off bicycle* - Frogiee</p>
-      <hr>
-      <button style="width:150px; font-weight: bold;color:black;" onclick="window.location.href='https://discord.com/frogie-s-arcade-official-975549006841270312'">Join Discord!</button>
-      <br>
-      <button style="width:150px; font-weight: bold;color:black;" onclick="window.location.href='https://let-me-do-my-work.site'">Free Link</button>
-    </div>
-    <div id="bouttabust">
-      <div class="img">
-        <img src="/ocular.webp">
-      </div>
-      <h1>Breakium</h1>
-      <p>i cant put down the cup</p>
-      <hr>
-      <button style="width:150px; font-weight: bold;color:black;" onclick="window.location.href='https://discord.gg/s4gXM6XUgH'">Join Discord!</button>
-      <br>
-      <button style="width:150px; font-weight: bold;color:black;" onclick="window.location.href='https://weluvubrantley.strangled.net/'">Free Link</button>
-    </div>
-    <div id="bouttabust">
-      <div class="img">
-        <img src="/logo.png">
-      </div>
-      <h1>Bruny's IXL Work</h1>
-      <p>jus like me frfr</p>
-      <hr>
-      <button style="width:150px; font-weight: bold;color:black;" onclick="window.location.href='https://discord.gg/kPa8xuMbu5'">Join Discord!</button>
-      <br>
-      <button style="width:150px; font-weight: bold;color:black;" onclick="window.location.href='https://epicfunmath.buzz/'">Free Link</button>
-    </div>
-    <div id="bouttabust">
-      <div class="img">
-        <img src="/look.gif">
-      </div>
-      <h1>This could be YOU!</h1>
-      <hr>
-      <h6>Join the discord to apply!</h6>
-      <button style="height:100px;width:200px;font-weight: bold;color:black;" onclick="window.location.href='https://dsc.gg/gnetwork'">Join Discord!</button>
-    </div>
-  </div>
-<hr>
-</div>
     <center>
       <p><a style="color: var(--txtcolor);
         font-size:40px;text-decoration: none;margin:15px;" href="//dsc.gg/gnetwork">&copy; Rabbit Industries 2025-2026</a></p>
@@ -235,49 +174,6 @@ document.addEventListener("DOMContentLoaded", function() {
   </div>
 </body>
 <script>
-    const texts = [
-    "gain nostalgia.",
-    "play games.",
-    "have fun.",
-    "be entertained.",
-    "search anything.",
-    "get highscores."
-];
-
-let currentTextIndex = 0;
-let currentCharIndex = 0;
-let isDeleting = false;
-const typewriterText = document.getElementById('typewriter-text');
-const typingSpeed = 150;
-const deletingSpeed = 100;
-const delayBetweenTexts = 2000;
-
-function type() {
-    const currentText = texts[currentTextIndex];
-
-    if (isDeleting) {
-        typewriterText.textContent = currentText.substring(0, currentCharIndex - 1);
-        currentCharIndex--;
-    } else {
-        typewriterText.textContent = currentText.substring(0, currentCharIndex + 1);
-        currentCharIndex++;
-    }
-
-    if (!isDeleting && currentCharIndex === currentText.length) {
-        setTimeout(() => isDeleting = true, delayBetweenTexts);
-    } else if (isDeleting && currentCharIndex === 0) {
-        isDeleting = false;
-        currentTextIndex = (currentTextIndex + 1) % texts.length;
-    }
-
-    const speed = isDeleting ? deletingSpeed : typingSpeed;
-    setTimeout(type, speed);
-}
-
-document.addEventListener('DOMContentLoaded', () => {
-    setTimeout(type, 500);
-});
-
 document.addEventListener('DOMContentLoaded', () => {
     const featured = document.querySelector('.featured');
     const images = Array.from(featured.children);
