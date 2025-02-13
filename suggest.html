@@ -1,5 +1,3 @@
-
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -10,17 +8,19 @@
   <title>TCI Textbook</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" href="https://cdnproduction.teachtci.com/assets/production-3e29e990/assets/favicon-7b4d266ea51c402bdd305020c853f97b3fac6b03d9f1dbc5e9fd17800577d939.svg" />
-    <link rel="shortcut icon" href="https://cdnproduction.teachtci.com/assets/production-3e29e990/assets/favicon-7b4d266ea51c402bdd305020c853f97b3fac6b03d9f1dbc5e9fd17800577d939.svg" />
+  <link rel="icon"
+    href="https://cdnproduction.teachtci.com/assets/production-3e29e990/assets/favicon-7b4d266ea51c402bdd305020c853f97b3fac6b03d9f1dbc5e9fd17800577d939.svg" />
+  <link rel="shortcut icon"
+    href="https://cdnproduction.teachtci.com/assets/production-3e29e990/assets/favicon-7b4d266ea51c402bdd305020c853f97b3fac6b03d9f1dbc5e9fd17800577d939.svg" />
   <link rel="stylesheet" type="text/css" href="/assets/css/main.css" />
-  <link rel="manifest" href="/manifest.json"/>
+  <link rel="manifest" href="/manifest.json" />
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <script src="https://kit.fontawesome.com/a70619ef6c.js" crossorigin="anonymous"></script>
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-TQ8CVXYBF9"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
+    function gtag() { dataLayer.push(arguments); }
     gtag('js', new Date());
 
     gtag('config', 'G-TQ8CVXYBF9');
@@ -28,10 +28,11 @@
   <style>
     .iframe {
       float: center;
-        width: 100%; 
+      width: 100%;
       height: 100%;
       text-align: center;
     }
+
     .fullscreen {
       font-size: 20;
       border-radius: 8px;
@@ -40,6 +41,7 @@
       font-size: 30px;
       justify-content: space-between;
     }
+
     .reload {
       font-size: 20;
       border-radius: 8px;
@@ -48,9 +50,11 @@
       font-size: 30px;
       justify-content: space-between;
     }
+
     .reload:hover {
       transform: rotate(-360deg);
     }
+
     .back {
       font-size: 20;
       border-radius: 8px;
@@ -59,6 +63,7 @@
       font-size: 30px;
       justify-content: space-between;
     }
+
     .forward {
       font-size: 20;
       border-radius: 8px;
@@ -67,6 +72,7 @@
       font-size: 30px;
       justify-content: space-between;
     }
+
     body {
       background-color: #222;
       color: #fff;
@@ -91,8 +97,8 @@
 
     .back-button:hover {
       background-color: gray;
-        left: 1rem;
-      }
+      left: 1rem;
+    }
 
 
     #game-container {
@@ -105,7 +111,7 @@
     #game-container iframe {
       border: none;
       float: center;
-        width: 1300px; 
+      width: 1300px;
       height: 475px;
       text-align: center;
       border-radius: 5px;
@@ -219,24 +225,31 @@
     }
   </script>
 
-  <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+  <script type="text/javascript"
+    src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
   <br>
   <div id="game-container" style="border-radius: 20px; background: #262626; height: 500px;">
     <div class="iframe">
-      <iframe
-        class="abc" id="gameFramey" id="web"></iframe>
+      <iframe class="abc" id="gameFramey" id="web"></iframe>
       <br>
     </div>
     <br>
-      <div style="float: center; border-radius: 20px; background: #262626; height: 60px; bottom: -4%; top: 1rem;text-align: center;justify-content: center;">
-         <a style="color: white; background: transparent; text-decoration: none; font-size: 30px;  margin: 0px 10px;" href="/english/"><i class="fa-solid fa-angle-left"></i> Back to games</a>
-      <a style="color: white; background: transparent; text-decoration: none; font-size: 30px;  margin: 0px 10px;" href="/history/"><i class="fa-solid fa-angle-left"></i> Back to apps</a>
-        <button onclick="reload()" style="background: transparent; width: 50px; right: 0;   margin: 0px 10px;" class="reload"><i class="fa-solid fa-rotate-right"></i></button>
-        <button onclick="goBack()" style="background: transparent; width: 50px; right: 0;   margin: 0px 10px;" class="back"><i class="fa-solid fa-chevron-left"></i></i></button>
-        <button onclick="goForward()" style="background: transparent; width: 50px; right: 0;   margin: 0px 10px;" class="forward"><i class="fa-solid fa-chevron-right"></i></button>
-      <button onclick="toggleFullscreen()" style="background: transparent; width: 50px; right: 0;  margin: 0px 10px;" class="fullscreen"><i class="fa-solid fa-expand"></i></button>
-      </div>
+    <div
+      style="float: center; border-radius: 20px; background: #262626; height: 60px; bottom: -4%; top: 1rem;text-align: center;justify-content: center;">
+      <a style="color: white; background: transparent; text-decoration: none; font-size: 30px;  margin: 0px 10px;"
+        href="/english/"><i class="fa-solid fa-angle-left"></i> Back to games</a>
+      <a style="color: white; background: transparent; text-decoration: none; font-size: 30px;  margin: 0px 10px;"
+        href="/history/"><i class="fa-solid fa-angle-left"></i> Back to apps</a>
+      <button onclick="reload()" style="background: transparent; width: 50px; right: 0;   margin: 0px 10px;"
+        class="reload"><i class="fa-solid fa-rotate-right"></i></button>
+      <button onclick="goBack()" style="background: transparent; width: 50px; right: 0;   margin: 0px 10px;"
+        class="back"><i class="fa-solid fa-chevron-left"></i></i></button>
+      <button onclick="goForward()" style="background: transparent; width: 50px; right: 0;   margin: 0px 10px;"
+        class="forward"><i class="fa-solid fa-chevron-right"></i></button>
+      <button onclick="toggleFullscreen()" style="background: transparent; width: 50px; right: 0;  margin: 0px 10px;"
+        class="fullscreen"><i class="fa-solid fa-expand"></i></button>
     </div>
+  </div>
   </div>
   <center>
     <br>
@@ -246,15 +259,15 @@
   </center>
   <script>
     function goBack() {
-        var iframe = document.getElementById('gameFramey');
-        iframe.contentWindow.history.back();
+      var iframe = document.getElementById('gameFramey');
+      iframe.contentWindow.history.back();
     }
 
     function goForward() {
-        var iframe = document.getElementById('gameFramey');
-        iframe.contentWindow.history.forward();
+      var iframe = document.getElementById('gameFramey');
+      iframe.contentWindow.history.forward();
     }
-    </script>
+  </script>
   <script>
     const urlParams = new URLSearchParams(window.location.search);
     const file = urlParams.get('historicalfigure');
@@ -286,11 +299,12 @@
     }
   </script>
 </body>
-  <script src="/assets/scripts/s1.js"></script>
-  <script src="/assets/scripts/s2.js"></script>
-  <script src="/assets/scripts/index.js"></script>
-  <script src="/assets/scripts/themes.js"></script>
-  <script src="/assets/scripts/panic.js"></script>
-  <script src="/assets/scripts/rc.js"></script>
-  <script src="/assets/scripts/2auto.js"></script>
+<script src="/assets/scripts/s1.js"></script>
+<script src="/assets/scripts/s2.js"></script>
+<script src="/assets/scripts/index.js"></script>
+<script src="/assets/scripts/themes.js"></script>
+<script src="/assets/scripts/panic.js"></script>
+<script src="/assets/scripts/rc.js"></script>
+<script src="/assets/scripts/2auto.js"></script>
+
 </html>

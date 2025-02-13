@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -10,10 +9,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" href="https://ssl.gstatic.com/docs/spreadsheets/forms/forms_icon_2023q4.ico" />
-    <link rel="shortcut icon" href="https://ssl.gstatic.com/docs/spreadsheets/forms/forms_icon_2023q4.ico" />
+  <link rel="shortcut icon" href="https://ssl.gstatic.com/docs/spreadsheets/forms/forms_icon_2023q4.ico" />
   <link rel="stylesheet" type="text/css" href="/assets/css/main.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
-  <link rel="manifest" href="/manifest.json"/>
+  <link rel="manifest" href="/manifest.json" />
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <meta name="990307346a802b31ebca359cf92b73af820e63c0" content="990307346a802b31ebca359cf92b73af820e63c0" />
   <!-- Google tag (gtag.js) -->
@@ -21,7 +20,7 @@
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-TQ8CVXYBF9"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
+    function gtag() { dataLayer.push(arguments); }
     gtag('js', new Date());
 
     gtag('config', 'G-TQ8CVXYBF9');
@@ -29,10 +28,11 @@
   <style>
     .iframe {
       float: center;
-        width: 100%; 
+      width: 100%;
       height: 100%;
       text-align: center;
     }
+
     .fullscreen {
       font-size: 20;
       border-radius: 8px;
@@ -41,6 +41,7 @@
       font-size: 30px;
       justify-content: space-between;
     }
+
     .reload {
       font-size: 20;
       border-radius: 8px;
@@ -49,9 +50,11 @@
       font-size: 30px;
       justify-content: space-between;
     }
+
     .reload:hover {
       transform: rotate(-360deg);
     }
+
     .back {
       font-size: 20;
       border-radius: 8px;
@@ -60,6 +63,7 @@
       font-size: 30px;
       justify-content: space-between;
     }
+
     .forward {
       font-size: 20;
       border-radius: 8px;
@@ -68,6 +72,7 @@
       font-size: 30px;
       justify-content: space-between;
     }
+
     body {
       background-color: var(--bgcolor);
       color: var(--txtcolor);
@@ -93,7 +98,7 @@
       width: 100vw;
       text-align: center;
       border-radius: 5px;
-      z-index:999;
+      z-index: 999;
     }
 
     #server-buttons {
@@ -196,69 +201,78 @@
     }
 
     .navbar {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            position: fixed;
-            top: 94.9%;
-            left:0;
-            right:0;
-            margin-left: auto;
-            margin-right: auto;
-            width: 80%;
-            height:50px;
-            background-color: var(--navbar);
-            color: white;
-            box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.2);
-            transition: transform 0.3s ease;
-            z-index: 1000;
-        }
-        .navbar:hover {
-            transform: translateY(-30px);
-        }
-        .navbar .icon {
-            display: flex;
-            align-items: center;
-        }
-        .navbar .icon img {
-            width: 40px;
-            height: 40px;
-            border-radius: 50%;
-            margin-right: 10px;
-        }
-        .navbar .title {
-            flex-grow: 1;
-            text-align: center;
-            font-size: 1.2em;
-        }
-        .navbar .buttons {
-            display: flex;
-            align-items: center;
-            justify-content:center;
-        }
-        .navbar .buttons .btn {
-            width: 30px;
-            height: 30px;
-            background-color: #333;
-            border-radius: 50%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin-left: 10px;
-        }
-        @media screen and (max-width: 768px) {
-            .navbar .title {
-                font-size: 1em;
-            }
-            .navbar .icon img {
-                width: 30px;
-                height: 30px;
-            }
-            .navbar .buttons .btn {
-                width: 25px;
-                height: 25px;
-            }
-        }
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: fixed;
+      top: 94.9%;
+      left: 0;
+      right: 0;
+      margin-left: auto;
+      margin-right: auto;
+      width: 80%;
+      height: 50px;
+      background-color: var(--navbar);
+      color: white;
+      box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.2);
+      transition: transform 0.3s ease;
+      z-index: 1000;
+    }
+
+    .navbar:hover {
+      transform: translateY(-30px);
+    }
+
+    .navbar .icon {
+      display: flex;
+      align-items: center;
+    }
+
+    .navbar .icon img {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      margin-right: 10px;
+    }
+
+    .navbar .title {
+      flex-grow: 1;
+      text-align: center;
+      font-size: 1.2em;
+    }
+
+    .navbar .buttons {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .navbar .buttons .btn {
+      width: 30px;
+      height: 30px;
+      background-color: #333;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-left: 10px;
+    }
+
+    @media screen and (max-width: 768px) {
+      .navbar .title {
+        font-size: 1em;
+      }
+
+      .navbar .icon img {
+        width: 30px;
+        height: 30px;
+      }
+
+      .navbar .buttons .btn {
+        width: 25px;
+        height: 25px;
+      }
+    }
   </style>
 </head>
 
@@ -269,16 +283,16 @@
     }
   </script>
 
-  <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+  <script type="text/javascript"
+    src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
   <br>
   <center>
-  <p style="font-size:10px;">If it gives a 404 issue, press the reload button on the hover menu!</p>
-  <p style="font-size:10px;">(if it gives you the option, press register pr<span>0x</span>y twice)</p>
-</center>
+    <p style="font-size:10px;">If it gives a 404 issue, press the reload button on the hover menu!</p>
+    <p style="font-size:10px;">(if it gives you the option, press register pr<span>0x</span>y twice)</p>
+  </center>
   <div id="game-container" style="border-radius: 20px; background: #262626;">
     <div class="iframe">
-      <iframe
-        class="abc" id="gameFramey" id="web"></iframe>
+      <iframe class="abc" id="gameFramey" id="web"></iframe>
       <br>
     </div>
     <br>
@@ -287,26 +301,31 @@
         <a href="/english/"><img src="/assets/images/jmw.png" alt="Icon"></a>
       </div>
       <div class="buttons">
-        <a style="color: var(--txtcolor); background: transparent; text-decoration: none; font-size: 30px;  margin: 0px 10px;" href="/history/"><i class="fa-solid fa-angle-left"></i> Back</a>
-        <button onclick="toggleFullscreen()" style="background: transparent; width: 50px; right: 0;  margin: 0px 10px;" class="fullscreen"><i class="fa-solid fa-expand"></i></button>
-        <button onclick="goBack()" style="background: transparent; width: 50px; right: 0;   margin: 0px 10px;" class="back"><i class="fa-solid fa-chevron-left"></i></i></button>
-        <button onclick="reload()" style="background: transparent; width: 50px; right: 0;   margin: 0px 10px;" class="reload"><i class="fa-solid fa-rotate-right"></i></button>
-        <button onclick="goForward()" style="background: transparent; width: 50px; right: 0;   margin: 0px 10px;" class="forward"><i class="fa-solid fa-chevron-right"></i></button>
+        <a style="color: var(--txtcolor); background: transparent; text-decoration: none; font-size: 30px;  margin: 0px 10px;"
+          href="/history/"><i class="fa-solid fa-angle-left"></i> Back</a>
+        <button onclick="toggleFullscreen()" style="background: transparent; width: 50px; right: 0;  margin: 0px 10px;"
+          class="fullscreen"><i class="fa-solid fa-expand"></i></button>
+        <button onclick="goBack()" style="background: transparent; width: 50px; right: 0;   margin: 0px 10px;"
+          class="back"><i class="fa-solid fa-chevron-left"></i></i></button>
+        <button onclick="reload()" style="background: transparent; width: 50px; right: 0;   margin: 0px 10px;"
+          class="reload"><i class="fa-solid fa-rotate-right"></i></button>
+        <button onclick="goForward()" style="background: transparent; width: 50px; right: 0;   margin: 0px 10px;"
+          class="forward"><i class="fa-solid fa-chevron-right"></i></button>
       </div>
-  </div>
+    </div>
   </div>
   </div>
   <script>
     function goBack() {
-        var iframe = document.getElementById('gameFramey');
-        iframe.contentWindow.history.back();
+      var iframe = document.getElementById('gameFramey');
+      iframe.contentWindow.history.back();
     }
 
     function goForward() {
-        var iframe = document.getElementById('gameFramey');
-        iframe.contentWindow.history.forward();
+      var iframe = document.getElementById('gameFramey');
+      iframe.contentWindow.history.forward();
     }
-    </script>
+  </script>
   <script>
     const urlParams = new URLSearchParams(window.location.search);
     const file = urlParams.get('historicalfigure');
@@ -337,7 +356,7 @@
     }
   </script>
   <script>
-            document.addEventListener('DOMContentLoaded', () => {
+    document.addEventListener('DOMContentLoaded', () => {
       try {
         if (document.documentElement.requestFullscreen) {
           document.documentElement.requestFullscreen();
@@ -354,25 +373,26 @@
     });
   </script>
   <script>
-    document.addEventListener("DOMContentLoaded", function() {
-    let menu = document.querySelector('.menu');
+    document.addEventListener("DOMContentLoaded", function () {
+      let menu = document.querySelector('.menu');
 
-    window.addEventListener('scroll', function() {
+      window.addEventListener('scroll', function () {
         if (window.scrollY > 100) {
-            menu.classList.add('active');
+          menu.classList.add('active');
         } else {
-            menu.classList.remove('active');
+          menu.classList.remove('active');
         }
+      });
     });
-});
 
   </script>
 </body>
-  <script src="/assets/scripts/s1.js"></script>
-  <script src="/assets/scripts/fade.js"></script>
-  <script src="/assets/scripts/s2.js"></script>
-  <script src="/assets/scripts/index.js"></script>
-  <script src="/assets/scripts/themes.js"></script>
-  <script src="/assets/scripts/panic.js"></script>
-  <script src="/assets/scripts/2auto.js"></script>
+<script src="/assets/scripts/s1.js"></script>
+<script src="/assets/scripts/fade.js"></script>
+<script src="/assets/scripts/s2.js"></script>
+<script src="/assets/scripts/index.js"></script>
+<script src="/assets/scripts/themes.js"></script>
+<script src="/assets/scripts/panic.js"></script>
+<script src="/assets/scripts/2auto.js"></script>
+
 </html>
