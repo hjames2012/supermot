@@ -1,6 +1,6 @@
 self.__uv$config = {
   prefix: '/static/jordansmath/work/',
-  bare: 'https://bare.calculra.store',
+  bare: 'https://smdpschool.org/bare/',
   encodeUrl: Ultraviolet.codec.xor.encode,
   decodeUrl: Ultraviolet.codec.xor.decode,
   handler: '/static/jmw/jmw.handler.js',
